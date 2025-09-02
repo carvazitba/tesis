@@ -1,0 +1,272 @@
+id,nombre,domicilio,telefono,email,web,tipo,calle,altura,direccion,Long,Lat,latitud,longitud,cluster,densidad,seguridad
+1,248 Finisterra,BÃ¡ez 248,(54 11) 4773 0901/ 4776 8777,info@248finisterra.com,,,BÃ¡ez,248.0,BÃ¡ez 248,,,-34.57237574343434,-58.43075768181818,-1,449.3,Seguro
+3,Bohemia Buenos Aires Hotel,PerÃº 845,(54 11) 4115-2561/2566,info@bohemiabuenosaires.com.ar,,,PerÃº,845.0,PerÃº 845,,,-34.61785325918367,-58.37446917755102,-1,1438.9,Moderado
+4,Castelli 75,Castelli 75,(54 11) 4952-9003 / 8584,,,,Castelli,75.0,Castelli 75,,,-34.609094400000004,-58.40458077346938,-1,1389.0,Moderado
+5,Cevallos Palace Hotel,"Cevallos, Virrey 261",(54 11) 4372-7636,hotelcevallos@hotmail.com,,,"Cevallos, Virrey",261.0,"Cevallos, Virrey 261",,,-34.611842,-58.38903,-1,613.55,Moderado
+6,Condor Hotel,La Rioja 258,(54 11) 4932-7626,hotelcondor@hotmail.com,,,La Rioja,258.0,La Rioja 258,,,-34.61339547142857,-58.408550871428574,-1,1594.5,Moderado
+12,Frossard Hotel,Tucuman 686,(54 11) 4322-1811,reservas@hotelfrossard.com.ar,,,Tucuman,686.0,Tucuman 686,,,-34.60115004285714,-58.376463542857145,-1,2096.45,Moderado
+13,Gran Sarmiento,Sarmiento 1892,(54 11) 4374-8069,,,,Sarmiento,1892.0,Sarmiento 1892,,,-34.60580771428571,-58.393474220408166,-1,1596.65,Moderado
+15,Hotel Manzanares Plaza,Manzanares 2339,(54 11) 4702-6839,info.manzanares@gmail.com,,,Manzanares,2339.0,Manzanares 2339,,,-34.5469736122449,-58.46871227959184,-1,457.9,Seguro
+18,Key's Hotel,Zapata 315,(54 11) 4778-3233 / 4772 8371,reservas@hotelkeys.com.ar,,,Zapata,315.0,Zapata 315,,,-34.5735315,-58.4408597,-1,610.65,Moderado
+21,Milan,Montevideo 337,(54 11) 4373-0759 / 4374-1906,info@milanhotel.com.ar,www.milanhotel.com.ar,,Montevideo,337.0,Montevideo 337,,,-34.6052361,-58.3892173,-1,1129.1,Moderado
+22,Omega,Paraguay 2991,(54 11) 4962-5431,reservashotelomega@gmail.com,,,Paraguay,2991.0,Paraguay 2991,,,-34.59568823877551,-58.409385997959184,-1,822.6,Moderado
+23,Rio de la Plata,"Garay, Juan De Av. 1271",(54 11) 4305-3191 / 4306-8689,,,,"Garay, Juan De Av.",1271.0,"Garay, Juan De Av. 1271",,,-34.6312942,-58.4163481,-1,347.45,Seguro
+25,ADM Ayamitre Hotel,Ayacucho 106,(54 11) 2053-3350,reservas@hotelayamitre.com.ar,,,Ayacucho,106.0,Ayacucho 106,,,-34.60804669591837,-58.39503809183673,-1,914.2,Moderado
+27,Americano Hotel,Rodriguez PeÃ±a 265,(54 11) 4382-4223,,,,Rodriguez PeÃ±a,265.0,Rodriguez PeÃ±a 265,,,-34.60598625918367,-58.39067438571429,-1,1596.65,Moderado
+29,Ayacucho Palace Hotel,Ayacucho 1048,(54 11) 4806-1815,reservas@ayacuchohotel.com.ar,,,Ayacucho,1048.0,Ayacucho 1048,,,-34.6044513,-58.3953125,0,1093.9,Moderado
+30,Be Hollywood,Humboldt 1716,(54 11) 5555-8100,reservas@behollywood.com,,,Humboldt,1716.0,Humboldt 1716,,,-34.58461214285714,-58.43525242857143,-1,578.7,Moderado
+31,Blanro,JunÃ­n 759,(54 11) 4374-2000,reservas@hotelblanro.com.ar,,,JunÃ­n,759.0,JunÃ­n 759,,,-34.60031668979592,-58.39706139591837,-1,1093.9,Moderado
+32,Camaro Palace Hotel,Sarmiento 4239,(54 11) 4867-4798 / 0195,camaroph@hotmail.com,,,Sarmiento,4239.0,Sarmiento 4239,,,-34.60436882040816,-58.42494517551021,-1,1014.4,Moderado
+35,Diplomat,San MartÃ­n 918,(54 11) 4311-9370 / 4312-6124,,,,San MartÃ­n,918.0,San MartÃ­n 918,,,-34.5972653,-58.3743773,4,966.7,Moderado
+37,Estilo MB,Callao Av. 164,(54 11) 4374-9112,buenosaires@hotelesestilomb.com.ar,,,Callao Av.,164.0,Callao Av. 164,,,-34.60728816734694,-58.39223510816327,-1,1596.65,Moderado
+38,Gran Hotel Atlantic,Castelli 45,(54 11) 4951-0081,info@hotelatlantic.com.ar,,,Castelli,45.0,Castelli 45,,,-34.6094049,-58.404559865306126,-1,1389.0,Moderado
+41,Guido Palace Hotel,Guido 1780,(54 11) 4812-0674 / 0841,hotelguidopalace@hotmail.com.ar,,,Guido,1780.0,Guido 1780,,,-34.59029238367347,-58.38971738367347,-1,471.9,Seguro
+42,Hotel A&B,Montevideo 248,(54 11) 4325-8960/4382-4118,recepcion@hotelayb.com,,,Montevideo,248.0,Montevideo 248,,,-34.606121,-58.389426,-1,1129.1,Moderado
+44,Hotel Central,Solis 192,(54 11) 4373-8785,,,,Solis,192.0,Solis 192,,,-34.611238048979594,-58.390267846938784,-1,953.15,Moderado
+45,Internacional,"Irigoyen, Bernardo De 552",(54 11) 4334-4949,info@hotel-internacional.com.ar,,,"Irigoyen, Bernardo De",552.0,"Irigoyen, Bernardo De 552",,,-34.6282587,-58.378062,-1,1108.9,Moderado
+46,King's Hotel,Corrientes Av. 623,(54 11) 4322-8461 / 8161,reservas@kingshotel.com.ar,,,Corrientes Av.,623.0,Corrientes Av. 623,,,-34.60322431111111,-58.37556188888889,-1,2096.45,Moderado
+48,Los Tres Reyes,Brasil 423,(54 11) 4300-9456,hotel_tresreyes@yahoo.com,,,Brasil,423.0,Brasil 423,,,-34.6253056,-58.3717822,-1,724.75,Moderado
+50,Mine Hotel Boutique,Gorriti 4770,(54 11) 4832-1100,info@minehotel.com,,,Gorriti,4770.0,Gorriti 4770,,,-34.59102540816327,-58.42885755102041,-1,820.2,Moderado
+52,Palermo Hotel,Godoy Cruz 2725,(54 11) 4774-7342,reservas@consultoralibertadores.com,,,Godoy Cruz,2725.0,Godoy Cruz 2725,,,-34.578365985714285,-58.42487949591837,-1,604.3,Moderado
+53,Paname,Godoy Cruz 2774,(54 11) 4771-4041,reservas@panamehotel.com.ar,,,Godoy Cruz,2774.0,Godoy Cruz 2774,,,-34.5779356877551,-58.42472314285715,-1,604.3,Moderado
+54,Plaza Roma,Lavalle 110,(54 11) 4311-1679,"info@hotelplazaroma.com.ar,reservas@hotelplazaroma.com.ar",https://hotelplazaromabuenosaires.com,,Lavalle,110.0,Lavalle 110,,,-34.60190436734694,-58.36933554285714,-1,442.0,Seguro
+55,Principe Hotel,Laprida 1454,(54 11) 4821-9818,principe@hotel-principe.com.ar,,,Laprida,1454.0,Laprida 1454,,,-34.5921029,-58.4056227,-1,1229.9,Moderado
+58,Tres Sargentos Hotel,Tres Sargentos 345,(54 11) 4312-6082,tresargentos@hotmail.com,www.hoteltressargentos.com.ar,,Tres Sargentos,345.0,Tres Sargentos 345,,,-34.597718191836734,-58.3723549244898,-1,966.7,Moderado
+59,Tucuman Palace Hotel,Tucuman 384,(54 11) 4311-3555,reservas@Tucumanpalacehotel.com.ar,,,Tucuman,384.0,Tucuman 384,,,-34.60086835102041,-58.372297493877554,5,885.85,Moderado
+60,Alpino,Cabello 3318,(54 11) 4802-5151,reservas@hotelalpino.com.ar,,,Cabello,3318.0,Cabello 3318,,,-34.581697142857145,-58.40792744897959,-1,794.2,Moderado
+61,Atlas Tower,Corrientes Av. 1778,(54 11) 5217-9371,reservas@atlastower.com.ar,www.atlastowerhotel.com.ar,,Corrientes Av.,1778.0,Corrientes Av. 1778,,,-34.6044703,-58.396243,0,1093.9,Moderado
+62,Bel Air Bs As Hotel,Arenales ,(54 11) 4021-4000,reservas@hotelbelair.com.ar,http://www.hotelbelairbuenosaires.com/index_es.htm,,Arenales,,Arenales ,,,-34.5941357,-58.3995154,-1,721.4,Moderado
+64,Eleven Palace Hotel,La Rioja 87,(54 11) 4864-5097 al 99,info@hoteleleven.com.ar,https://hoteleleven.com.ar/,,La Rioja,87.0,La Rioja 87,,,-34.61129715102041,-58.40890164693878,-1,1594.5,Moderado
+65,Embajador,"Pellegrini, Carlos 1185",(54 11) 4326-5302 al 11,reservas@525hotel.com,,,"Pellegrini, Carlos",1185.0,"Pellegrini, Carlos 1185",,,-34.5979845,-58.3810899,-1,727.4,Moderado
+66,Ãpico Recoleta,Laprida 1902,(54 11) 5199-8399,info@epicorecoletahotel.com.ar,epicorecoletahotel.com.ar,,Laprida,1902.0,Laprida 1902,,,-34.5883949,-58.4009154,-1,531.15,Moderado
+67,Esmeralda Palace Hotel,Esmeralda 527,(54 11) 5811 0317/22,reservasesmeralda@orho-hoteles.com.ar,,,Esmeralda,527.0,Esmeralda 527,,,-34.60202713265306,-58.378084016326525,1,2096.45,Moderado
+69,Europlaza Hotel & Suites,Montevideo 327,(54 11) 4371-8215 / 5032-7679/7699,info@europlaza.com.ar,,,Montevideo,327.0,Montevideo 327,,,-34.605103142857146,-58.38928698163266,-1,1129.1,Moderado
+70,Gran Hotel Ailen,Suipacha 18,(54 11) 4345-4980 / 4343-2037,reservas@granhotelailen.com.ar,http://granhotelailen.com.ar/,,Suipacha,18.0,Suipacha 18,,,-34.6080575,-58.3793281,-1,838.6,Moderado
+73,Holiday Inn Express Puerto Madero,"Alem, Leandro N. Av. 770",(54 11) 4311-5200,reservas.arg@talbot.cl,https://www.ihg.com/holidayinnexpress/hotels/us/es/buenos-aires/buept/hoteldetail,,"Alem, Leandro N. Av.",770.0,"Alem, Leandro N. Av. 770",,,-34.59762095,-58.37098730756253,-1,966.7,Moderado
+75,Hotel NÂ´OntuÃ©,Corrientes Av. 3321,(54 11) 4860 1600,info@nontuehotel.com.ar,,,Corrientes Av.,3321.0,Corrientes Av. 3321,,,-34.6038923,-58.41214247558659,-1,2132.0,Moderado
+77,IBIS Buenos Aires Obelisco,Corrientes Av. 1344,(54 11) 4370-9300,h6502-dm1@accor.com,https://all.accor.com/hotel/6502/index.es.shtml,,Corrientes Av.,1344.0,Corrientes Av. 1344,,,-34.6041298,-58.3858207,-1,1427.15,Moderado
+79,Imperial Park,Lima 107,(54 11) 4383-0555,info@imperialparkhotel.com,NO TIENE,,Lima,107.0,Lima 107,,,-34.6098130877551,-58.382044434693874,-1,1136.15,Moderado
+80,Irun,Santiago Del Estero 1671,(54 11) 4306-0018/ 4304-2746 / 0-810-222-4441,info@hotelirun.com.ar,www.hotelirun.com.ar,,Santiago Del Estero,1671.0,Santiago Del Estero 1671,,,-34.6275892,-58.384479,2,2987.05,Riesgoso
+81,La Perla Hotel,Jujuy Av. 36,(54 11) 5218-7737 al 40,info@hotellaperla.com.ar,www.hotellaperla.com.ar,,Jujuy Av.,36.0,Jujuy Av. 36,,,-34.61058939430678,-58.40579645576798,-1,1594.5,Moderado
+85,Normandie Hotel,Rodriguez PeÃ±a 320,(54 11) 4371-7001 al 06,normandie@hotelnormandie.com.ar,,,Rodriguez PeÃ±a,320.0,Rodriguez PeÃ±a 320,,,-34.605308997959185,-58.39088569591837,-1,1596.65,Moderado
+86,O2 Hotel Buenos Aires,JunÃ­n 357,(54 11) 4953-4455 / 4071,reservas@grupodotia.com,www.hoteleso2.com,,JunÃ­n,357.0,JunÃ­n 357,,,-34.60517027142857,-58.39663828571429,0,914.2,Moderado
+87,Parlamento Hotel,Rodriguez PeÃ±a 61,(54 11) 4371-3789 / 4374-1410/1709,info@hotelparlamento.com.ar,www.hotelparlamento.com.ar,,Rodriguez PeÃ±a,61.0,Rodriguez PeÃ±a 61,,,-34.60838336734694,-58.3905745,-1,1596.65,Moderado
+88,Regis Hotel,Lavalle 813,0810 222 6746 / (5411) 4327 2605,regisventa@hotelregis.com.ar,www.hotelregis.com.ar,,Lavalle,813.0,Lavalle 813,,,-34.60234636530612,-58.37838502244898,1,2096.45,Moderado
+89,Rochester Concept,Maipu 572,(54 11) 4328-3930,info@rochester-hotel.com.ar,http://www.rochester-hotel.com.ar/concept/,,Maipu,572.0,Maipu 572,,,-34.6013941,-58.3769099,-1,2096.45,Moderado
+90,Sarmiento Palace Hotel,Sarmiento 1953,(54 11) 4953-3420 / 3404 / 5014,info@hotelsarmiento.com.ar,,,Sarmiento,1953.0,Sarmiento 1953,,,-34.605724,-58.39445,-1,1596.65,Moderado
+91,Sarum Hotel Design,Quesada 2370,(54 11) 4704-0039/0040,info@hotelsarum.com.ar,https://www.hotelsarum.com.ar/,,Quesada,2370.0,Quesada 2370,,,-34.5541815,-58.4627929,-1,571.2,Moderado
+94,Torre Hotel,Olleros 4186,(54 11) 4552-6034/6126,info@torre-hotel.com.ar,,,Olleros,4186.0,Olleros 4186,,,-34.5672007,-58.4406003,-1,413.1,Seguro
+95,Viasui Hotel,Viamonte 960,(54 11) 5252- 3070 al 73,reservas@viasuihotel.com.ar,http://www.viasuihotel.com.ar/,,Viamonte,960.0,Viamonte 960,,,-34.60022035714285,-58.38049805714286,-1,2453.6,Moderado
+98,AmÃ©rian Buenos Aires Park Hotel,Reconquista 699,(54 11) 5171-6500,"reservas@amerian.com,reservasbph@amerian.com",,,Reconquista,699.0,Reconquista 699,,,-34.5998717,-58.3724657,5,966.7,Moderado
+99,Argenta Tower,Juncal 868,(54 11) 4325-4100,reservas@argenta-tower.com.ar,,,Juncal,868.0,Juncal 868,,,-34.5929493,-58.3795404,-1,804.4,Moderado
+100,Bisonte Libertad,Libertad 902,(54 11) 3723-2520,reservas@bisontelibertad.com,,,Libertad,902.0,Libertad 902,,,-34.59795895,-58.384232572275806,-1,727.4,Moderado
+101,Bisonte Palace Hotel,"Alvear, Marcelo T. De 902",(54 11) 4328-4751,reservas@bisontepalace.com,www.bisontepalace.com,,"Alvear, Marcelo T. De",902.0,"Alvear, Marcelo T. De 902",,,-34.5973606,-58.3950462,3,1490.95,Moderado
+102,Bristol Hotel,Cerrito 286,(54 11) 5252-6400,reservas@hotelbristol.com.ar,,,Cerrito,286.0,Cerrito 286,,,-34.60528041428572,-58.38225352857143,-1,1136.15,Moderado
+105,Centuria,Suipacha 30,(54 11) 4342-5575,recepcion@hotelcenturia.com,,,Suipacha,30.0,Suipacha 30,,,-34.6079339,-58.379323,-1,838.6,Moderado
+106,Conte Hotel,"Pellegrini, Carlos 101",(54 11) 4000-9350,reservas@conte-hotel.com,,,"Pellegrini, Carlos",101.0,"Pellegrini, Carlos 101",,,-34.5979845,-58.3810899,-1,727.4,Moderado
+109,Da Vinci Hotel,Tucuman 857,(54 11) 5031-8002,info@davincihotel.com.ar,,,Tucuman,857.0,Tucuman 857,,,-34.60106775,-58.37895852694395,-1,2096.45,Moderado
+110,Dazzler By Wyndham Buenos Aires San MartÃ­n,San MartÃ­n 920,(54 11) 5256-7700,reservasweb@dazzlersanmartin.com,,,San MartÃ­n,920.0,San MartÃ­n 920,,,-34.597082,-58.3743907,4,966.7,Moderado
+111,Dolmen Hotel,Suipacha 1079,(54 11) 4311-9000 / 4315-7117,reservas@hoteldolmen.com.ar,www.hoteldolmen.com.ar,,Suipacha,1079.0,Suipacha 1079,,,-34.59560432272728,-58.37987327727273,-1,1141.9,Moderado
+113,El Conquistador,Suipacha 948,(5411) 4328-3012,reservas@elconquistador.com.ar,,,Suipacha,948.0,Suipacha 948,,,-34.59710335,-58.38015864367775,-1,727.4,Moderado
+114,Esplendor by Wyndham Buenos Aires,San MartÃ­n 780,(54 11) 5256-8800 / 5217 5799,frontdesk@esplendorbuenosaires.com,http://www.esplendorbuenosaires.com/,,San MartÃ­n,780.0,San MartÃ­n 780,,,-34.5988364,-58.3744004,-1,966.7,Moderado
+115,Eurobuilding Hotel,Lima 187,(54 11) 5352-1111 / 5325-1104,buenosaires@hoteleuro.com,,,Lima,187.0,Lima 187,,,-34.61062892448979,-58.382010230612245,-1,623.85,Moderado
+117,Facon Grande,Reconquista 645,(54 11) 4312-6360/69,reservas@hotelfacongrande.com,www.hotelfacongrande.com,,Reconquista,645.0,Reconquista 645,,,-34.6003122,-58.372527,5,885.85,Moderado
+118,Gran Hotel Buenos Aires,"Alvear, Marcelo T. De 767",(54 11) 4312-3003,reservas@granhotelbue.com.ar,http://www.granhotelbuenosaires.com/,,"Alvear, Marcelo T. De",767.0,"Alvear, Marcelo T. De 767",,,-34.5973606,-58.3950462,3,1490.95,Moderado
+119,Gran Hotel Dora,Maipu 963,(54 11) 4312-7391,reservas@dorahotel.com.ar,,,Maipu,963.0,Maipu 963,,,-34.596799865306124,-58.37689376326531,-1,1141.9,Moderado
+120,Grand King Hotel,Lavalle 560,(54 11) 4393-4012,reservas@grandking.com.ar,grandking.com.ar,,Lavalle,560.0,Lavalle 560,,,-34.60221159591837,-58.37470468367347,-1,885.85,Moderado
+121,Hotel Globales Republica Wellness & Spa,Cerrito 370,(54 11) 4382-5050,res.republica@hotelesglobales.com,,,Cerrito,370.0,Cerrito 370,,,-34.60427555,-58.38236124927956,-1,2453.6,Moderado
+123,Hotel Sheltown,"Alvear, Marcelo T. De 742",(54 11) 5254-6835,reservas@525hotel.com,www.525hotel.com,,"Alvear, Marcelo T. De",742.0,"Alvear, Marcelo T. De 742",,,-34.5973606,-58.3950462,3,1490.95,Moderado
+124,Howard Johnson Plaza Florida Street,Florida 944,(54 11) 4891-9200,reservas@hjFlorida.com.ar,,,Florida,944.0,Florida 944,,,-34.5971344,-58.3755105,-1,1141.9,Moderado
+126,Intersur Recoleta,Callao Av. 1764,(54 11) 5533-4000,reservas@intersurrecoleta.com.ar,www.intersurrecoleta.com.ar,,Callao Av.,1764.0,Callao Av. 1764,,,-34.58942809387755,-58.38950798367347,-1,478.9,Seguro
+127,Ker Recoleta,"Alvear, Marcelo T. De 1368",(54 11) 5277-4600,reservasrecoleta@kerhoteles.com.ar,,,"Alvear, Marcelo T. De",1368.0,"Alvear, Marcelo T. De 1368",,,-34.5973606,-58.3950462,3,1490.95,Moderado
+128,Lafayette,Reconquista 546,(54 11) 4393-9081,info@lafayettehotel.com.ar,,,Reconquista,546.0,Reconquista 546,,,-34.60152724285714,-58.37262358163265,5,885.85,Moderado
+129,Lennox,Talcahuano 52,(54 11) 5272-1070,reservas@lennoxhotels.com,www.lennoxhotels.com,,Talcahuano,52.0,Talcahuano 52,,,-34.6081190755102,-58.38496966938776,-1,1136.15,Moderado
+130,Melia Recoleta Plaza,Posadas 1557,(54 11) 5353-4000,reservas@meliarecoletaplaza.com.ar,,,Posadas,1557.0,Posadas 1557,,,-34.5869334,-58.3875214,-1,478.9,Seguro
+131,NH 9 De Julio,Cerrito 156,(54 11) 5776-6464 / 4124-7400,nh9dejulio@nh-hotels.com,www.nh-hotels.com,,Cerrito,156.0,Cerrito 156,,,-34.60671071428571,-58.38219075714285,-1,1136.15,Moderado
+132,NH Collection Buenos Aires CrillÃ³n,"Santa Fe, Av. 796",(54 11) 5776-6464 / 4310-2000,nhcrillon@nh-hotels.com,www.nh-hotels.com,,"Santa Fe, Av.",796.0,"Santa Fe, Av. 796",,,-34.595961,-58.3932128,-1,1403.95,Moderado
+134,NH Florida,San MartÃ­n 839,(54 11) 5776-6464 / 4321-9850,nhFlorida@nh-hotels.com,www.nh-hotels.com,,San MartÃ­n,839.0,San MartÃ­n 839,,,-34.5981451,-58.3741431,4,966.7,Moderado
+135,NH Jousten,Corrientes Av. 280,(54 11) 5776-6464 / 4321-6750,nhcollectionjousten@nh-hotels.com,www.nh-hotels.com,,Corrientes Av.,280.0,Corrientes Av. 280,,,-34.60315892653061,-58.37090406938776,-1,885.85,Moderado
+136,NH Latino,Suipacha 309,(54 11) 5776-6464 / 4321-6700,nhlatino@nh-hotels.com,www.nh-hotels.com,,Suipacha,309.0,Suipacha 309,,,-34.60465942653061,-58.37935605510204,-1,2096.45,Moderado
+138,Novotel,Corrientes Av. 1334,(54 11) 4370-9300 / 9500,h6503-re@accor.com,,,Corrientes Av.,1334.0,Corrientes Av. 1334,,,-34.6041034,-58.3856042,-1,1427.15,Moderado
+140,Presidente Hotel,Cerrito 850,(54 11) 4816-2222,reservas@hotelpresidente.com.ar,,,Cerrito,850.0,Cerrito 850,,,-34.59847495,-58.382950542866766,-1,727.4,Moderado
+141,Principado Downtown Hotel,Paraguay 481,(54 11) 4313-3022,reservas@principado.com.ar,,,Paraguay,481.0,Paraguay 481,,,-34.5973154,-58.3738136,4,966.7,Moderado
+142,Recoleta Luxury Boutique Hotel,Parera 183,(54 11) 6777-0200,reservas.bsas@hotels-unique.com,,,Parera,183.0,Parera 183,,,-34.590805622448975,-58.38508889183673,-1,471.9,Seguro
+143,Reconquista Plaza Hotel,Reconquista 602,(54 11) 5263-0277,Reconquistaplaza@latitudhoteles.com,,,Reconquista,602.0,Reconquista 602,,,-34.6007492,-58.3726677,5,885.85,Moderado
+144,Regente Palace Hotel,Suipacha 964,(54 11) 4328-6800,reservas@regente.com,,,Suipacha,964.0,Suipacha 964,,,-34.59699370408163,-58.37993627142857,-1,1141.9,Moderado
+145,Rochester Classic,Esmeralda 542,0800-345-0040 / (54 11) 4326-6076 / 5256-1055,reservas@rochesterclassic.com.ar,,,Esmeralda,542.0,Esmeralda 542,,,-34.60186479591837,-58.3782039755102,1,2096.45,Moderado
+146,Savoy Hotel,Callao Av. 181,(54 11) 4370-8000 / 10,reservas@savoyhotel.com.ar,,,Callao Av.,181.0,Callao Av. 181,,,-34.60706082653061,-58.391958312244896,-1,1596.65,Moderado
+148,Tritone Hotel,Maipu 657,(54 11) 4325-8960/8955,"reservas@tritonehotel.com.ar,recepcion@tritonehotel.com.ar",,,Maipu,657.0,Maipu 657,,,-34.6004338,-58.3767184,-1,2096.45,Moderado
+150,Unique Le B Club Boutique & Terrasse,Talcahuano 1253,(54 11) 6777-0400,reservas.bsas@hotels-unique.com,,,Talcahuano,1253.0,Talcahuano 1253,,,-34.5938448,-58.3858387,-1,471.9,Seguro
+151,Wilton Hotel,Callao Av. 1162,(54 11) 4811-1818 / 1993,"info@hotelwilton.com.ar,reservas@hotelwilton.com.ar",,,Callao Av.,1162.0,Callao Av. 1162,,,-34.595203104081634,-58.39341276734694,-1,1403.95,Moderado
+153,Abasto Hotel Buenos Aires,Corrientes Av. 3190,(54 11) 6311-4433/4466/4465,reservas@abastohotel.com,,,Corrientes Av.,3190.0,Corrientes Av. 3190,,,-34.604167312244904,-58.410147465306125,-1,2132.0,Moderado
+154,Alvear Palace Hotel,Alvear Av. 1891,(54 11) 4808-2100,"reservas@alvear.com.ar,info@alvearpalace.com",,,Alvear Av.,1891.0,Alvear Av. 1891,,,-34.5876267,-58.3887915,-1,478.9,Seguro
+155,Claridge Hotel,Tucuman 535,(54 11) 4319-8000,reservas@claridge.com.ar,www.claridge.com.ar,,Tucuman,535.0,Tucuman 535,,,-34.6007439,-58.37451707268363,-1,885.85,Moderado
+157,Feir's Park Hotel,Esmeralda 1366,(54 11) 4131-1900,feirspark@feirspark.com.ar,,,Esmeralda,1366.0,Esmeralda 1366,,,-34.59166557435898,-58.378305528205125,-1,804.4,Moderado
+158,Four Seasons Hotel Buenos Aires,Posadas 1086,(54 11) 4321-1200,reservations.bue@fourseasons.com,,,Posadas,1086.0,Posadas 1086,,,-34.5906065,-58.3826201,-1,421.1,Seguro
+159,Hilton Buenos Aires,Macacha Guemes 351,(54 11) 4891-0000,reservations.buenosaires@hilton.com,,,Macacha Guemes,351.0,Macacha Guemes 351,,,-34.605935599999995,-58.363673100346176,-1,155.05,Muy Seguro
+160,Intercontinental Buenos Aires,Moreno 809,(54 11) 4340-7100,"andrea.hernandez@ihg.com,valeria.bulacio@ihg.com",https://www.ihg.com/intercontinental/hotels/us/es/buenos-aires/bueha/hoteldetail,,Moreno,809.0,Moreno 809,,,-34.6114314,-58.3779332,-1,577.0,Moderado
+162,Melia Buenos Aires,Reconquista 945,(54 11) 4891-3800,reservas@meliabuenosaires.com.ar,,,Reconquista,945.0,Reconquista 945,,,-34.59680910612245,-58.37297601836735,4,966.7,Moderado
+163,NH Buenos Aires City,Bolivar 160,(54 11) 4121-6464 / 6400,nhcity@nh-hotels.com,,,Bolivar,160.0,Bolivar 160,,,-34.60978117346939,-58.37342111428571,-1,1069.5,Moderado
+164,Palacio Duhau - Park Hyatt Buenos Aires,Alvear Av. 1661,(54 11) 5171-1234,buenosaires.park@hyatt.com,,,Alvear Av.,1661.0,Alvear Av. 1661,,,-34.5893389,-58.3863661,-1,478.9,Seguro
+165,Regal Pacific,25 de mayo 764,(54 11) 4310-7000,reservas@regalpacific.com.ar,,,25 de mayo,764.0,25 de mayo 764,,,-34.598896,-58.3715304,-1,966.7,Moderado
+167,Sofitel Buenos Aires Recoleta,Posadas 1232,(54 11) 4819-1100,h8932-re@accor.com,,,Posadas,1232.0,Posadas 1232,,,-34.5895504,-58.3842203,-1,216.35,Muy Seguro
+169,Broadway Hotel & Suites,Corrientes Av. 1173,(54 11) 4378-9250,ventas@broadway-suites.com.ar,,,Corrientes Av.,1173.0,Corrientes Av. 1173,,,-34.6044703,-58.396243,0,1093.9,Moderado
+170,Loi Suites Esmeralda,"Alvear, Marcelo T. De 842",(54 11) 4131-6800,reservas3@loisuites.com.ar,,,"Alvear, Marcelo T. De",842.0,"Alvear, Marcelo T. De 842",,,-34.5973606,-58.3950462,3,1490.95,Moderado
+171,Park Royal Buenos Aires,Suipacha 1092,(54 11) 4320-3600,reservationsbue@park-royalhotels.com,https://www.park-royalhotels.com/es/hoteles/argentina/buenos-aires/park-royal-city-buenos-aires/,,Suipacha,1092.0,Suipacha 1092,,,-34.60772235,-58.379254200000005,-1,838.6,Moderado
+172,Torre Cristoforo Colombo Suites,Fray Justo Santa MarÃ­a de Oro 2747,(54 11) 4778-4945,reservas@hotelcc.com.ar,https://www.hotelcc.com.ar,,Fray Justo Santa MarÃ­a de Oro,2747.0,Fray Justo Santa MarÃ­a de Oro 2747,,,-34.57672594897959,-58.42186270204082,-1,604.3,Moderado
+173,Trianon Residence Recoleta,Callao Av. 1869,(54 11) 4819-9300,info@trianon.com.ar,https://www.trianonresidence.com/,,Callao Av.,1869.0,Callao Av. 1869,,,-34.58867125306122,-58.38832384897959,-1,478.9,Seguro
+174,UP Viamonte,Viamonte 1373,(54 11) 4371-9993 / 5254 2210,,,,Viamonte,1373.0,Viamonte 1373,,,-34.60048532040817,-58.38628530816327,-1,1427.15,Moderado
+176,Argentina Tango Hotel,Suipacha 545,(54 9 11) 56 30 46 77,,http://www.atangohotel.com/#,,Suipacha,545.0,Suipacha 545,,,-34.6018676,-58.3795079,-1,2096.45,Moderado
+177,Icaro Suites,Montevideo 229,(54 11) 4372-9000,resevas@icarosuites.com,,,Montevideo,229.0,Montevideo 229,,,-34.6062585,-58.3891957,-1,1129.1,Moderado
+178,Intersur Suites,Corrientes Av. 1984,(54 11) 5246-1500,reservas@intersursuites.com.ar,,,Corrientes Av.,1984.0,Corrientes Av. 1984,,,-34.604619087755104,-58.39497770612245,0,1345.8,Moderado
+179,Ker House Belgrano,Vuelta de Obligado 2727,(54 11) 5277-4600 / 4789-9383,reservasbelgrano@kerhoteles.com.ar,,,Vuelta de Obligado,2727.0,Vuelta de Obligado 2727,,,-34.555491,-58.460669,-1,824.15,Moderado
+180,Ker Urban Urquiza,DÃ¯az Colodrero 2513,(54 11) 5353-9232 / 9233,reservasurquiza@kerhoteles.com.ar,,,DÃ¯az Colodrero,2513.0,DÃ¯az Colodrero 2513,,,-34.57277947959184,-58.48618331020408,-1,658.8,Moderado
+181,Mayflower Suites,ParanÃ¡ 720,(54 11) 5238 0050 / 5235 0456,reservas@mayflowersuites.com.ar,,,ParanÃ¡,720.0,ParanÃ¡ 720,,,-34.6003881877551,-58.38819389591837,-1,1427.15,Moderado
+182,Palermo Suites Buenos Aires Apartments,Fray Justo Santa MarÃ­a de Oro 2529,(54 11) 5197-5800,reservas@palermosuites.net,,,Fray Justo Santa MarÃ­a de Oro,2529.0,Fray Justo Santa MarÃ­a de Oro 2529,,,-34.57888891428571,-58.423907914285714,-1,604.3,Moderado
+183,The Glu Hotel,Godoy Cruz 1733,(54 11) 4831-4646,info@thegluhotel.com,,,Godoy Cruz,1733.0,Godoy Cruz 1733,,,-34.58731536938775,-58.43348838571429,-1,1323.65,Moderado
+184,Ulises Recoleta Suites,Ayacucho 2016,(54 11) 4804-4571 / 4572,info@ulisesrecoleta.com.ar,www.ulisesrecoleta.com.ar,,Ayacucho,2016.0,Ayacucho 2016,,,-34.58744914285714,-58.389092857142856,-1,478.9,Seguro
+186,Urban Suites Recoleta,JunÃ­n 1727,(54 11) 4803 2300,ventas@urbanrecoleta.com,www.urbanrecoleta.com,,JunÃ­n,1727.0,JunÃ­n 1727,,,-34.5890174,-58.3925644,-1,643.55,Moderado
+187,Vitrum Hotel,Gorriti 5641,(54 11) 4776-5030,info@vitrumhotel.com,,,Gorriti,5641.0,Gorriti 5641,,,-34.584544883673466,-58.437572753061225,-1,578.7,Moderado
+188,Desing Ce - Hotel de DiseÃ±o,"Alvear, Marcelo T. De 1695",(54 11) 5237-3100,info@designce.com,http://www.designce.com/home/,,"Alvear, Marcelo T. De",1695.0,"Alvear, Marcelo T. De 1695",,,-34.5973606,-58.3950462,3,1490.95,Moderado
+189,Hotel Pampa Plaza,La Pampa 777,(54 11) 4789-9561 / 4788-3984/3084,info@hotelpampaplaza.com.ar,,,La Pampa,777.0,La Pampa 777,,,-34.5545481,-58.4371123,-1,169.65,Muy Seguro
+191,Alba,"Garay, Juan De Av. 1381",(54 11) 4304-2935 / 4306-4304,"albahoteleria@yahoo.com.ar,gaetos@hotmail.com",,,"Garay, Juan De Av.",1381.0,"Garay, Juan De Av. 1381",,,-34.63227825,-58.42300201074467,-1,281.75,Seguro
+192,Aldeano I,La Rioja 277,(54 11) 4931-2980,aldeano1@hotelaldeano.com.ar,,,La Rioja,277.0,La Rioja 277,,,-34.61363059795918,-58.40868742244898,-1,1594.5,Moderado
+193,Alsina,24 de noviembre 190,(54 11) 4931-9393,,,,24 de noviembre,190.0,24 de noviembre 190,,,-34.61282287959184,-58.41142279387755,-1,1106.0,Moderado
+194,Aries,GascÃ³n 1147,(54 11) 4883-1232/1164585589/44323702,info@arieshotel.com.ar,,,GascÃ³n,1147.0,GascÃ³n 1147,,,-34.5971583,-58.4231243,-1,1245.65,Moderado
+195,Astor,Av. Caseros 896,(54 11) 4307-7117,info@astorhoteles.com.ar,,,Av. Caseros,896.0,Av. Caseros 896,,,-34.62787524489796,-58.3763897244898,-1,1108.9,Moderado
+196,Autopista,Salta 1446,(54 11) 4305-1634,,,,Salta,1446.0,Salta 1446,,,-34.62533225102041,-58.38280850816327,-1,2987.05,Riesgoso
+198,Capri,ConstituciÃ³n 1881,(54 11) 4304-0305,,,,ConstituciÃ³n,1881.0,ConstituciÃ³n 1881,,,-34.6273936,-58.3811172,-1,2987.05,Riesgoso
+199,Carlos I,"Calvo, Carlos 1463",(54 11) 4305-3700,cristianlanni@hotmail.com,,,"Calvo, Carlos",1463.0,"Calvo, Carlos 1463",,,-34.6193913,-58.3673519,-1,474.8,Seguro
+200,Casablanca,Santiago del Estero 1685,(54 11) 4305-4048,"cristinanovas@ciudad.com.ar,hotelcasablanca@ciudad.com.ar",,,Santiago del Estero,1685.0,Santiago del Estero 1685,,,-34.6279661,-58.3844215,2,2987.05,Riesgoso
+201,Central,Brasil 1327,(54 11) 4304-3783,,,,Brasil,1327.0,Brasil 1327,,,-34.62817665714286,-58.38476054897959,2,2987.05,Riesgoso
+202,Cibeles,"Cevallos, Virrey 264",(54 11) 4373-1444,hotelcibeles@hotmail.com.ar,,,"Cevallos, Virrey",264.0,"Cevallos, Virrey 264",,,-34.611842,-58.38903,-1,613.55,Moderado
+203,Colonial,24 de noviembre 229,(54 11) 4931-8800/3104,info@hotelcolonialbaires.com.ar,,,24 de noviembre,229.0,24 de noviembre 229,,,-34.613380771428574,-58.411490171428575,-1,1106.0,Moderado
+205,Egipto,Corrientes Av. 3193,(54 11) 4863-0808,info@hotelegipto.com.ar,,,Corrientes Av.,3193.0,Corrientes Av. 3193,,,-34.603919718367344,-58.41010170408163,-1,2132.0,Moderado
+206,Esquel,Brasil 1319,(54 11) 4505-6362,,,,Brasil,1319.0,Brasil 1319,,,-34.62816048571429,-58.384669487755104,2,2987.05,Riesgoso
+210,Gran Hotel EspaÃ±a,TacuarÃ­ 80,(54 11) 4343-5541,,,,TacuarÃ­,80.0,TacuarÃ­ 80,,,-34.60925945,-58.379129875,-1,838.6,Moderado
+212,Guayaquil,Moreno 2718,(54 11) 4957-5097,info@hotelguayaquil.com.ar,,,Moreno,2718.0,Moreno 2718,,,-34.613454760170875,-58.40445719834764,-1,822.05,Moderado
+213,Hotel San Martin,Callao Av. 327,(54 11 ) 4371-6450,hotelsanmartin1@yahoo.com.ar,,,Callao Av.,327.0,Callao Av. 327,,,-34.605284675510205,-58.39207763877551,-1,1596.65,Moderado
+214,Jade,Sanchez De Bustamante 839,(54 11) 4863-8711,,,,Sanchez De Bustamante,839.0,Sanchez De Bustamante 839,,,-34.60067102244898,-58.41380488367347,-1,2132.0,Moderado
+216,Lacroze,"Lacroze, Federico Av. 3236",(54 11) 4552-4445,,,,"Lacroze, Federico Av.",3236.0,"Lacroze, Federico Av. 3236",,,-34.5711907,-58.4457799,-1,436.45,Seguro
+217,Las Familias,Cuba 3146,(54 11) 4702-5687,lasfamiliashotel@gmail.com,http://www.hotellasfamilias.com/es/,,Cuba,3146.0,Cuba 3146,,,-34.5515552,-58.4635767,-1,571.2,Moderado
+218,Leon,Callao Av. 758,(54 11) 4811-5054,hotel-leon@hotmail.com,,,Callao Av.,758.0,Callao Av. 758,,,-34.60021018571429,-58.39299124285714,-1,1345.8,Moderado
+219,Litoral,Corrientes Av. 6891,(54 11) 4554-5493,,,,Corrientes Av.,6891.0,Corrientes Av. 6891,,,-34.5869444,-58.4547182,-1,594.8,Moderado
+220,Los Robles,Estados Unidos 827,(54 11) 4300-2096,daquilaus@hotmail.com,,,Estados Unidos,827.0,Estados Unidos 827,,,-34.6184474,-58.37767701414501,-1,1163.4,Moderado
+221,Lourdes,Callao Av. 44,(54 11)4952-3087/3720,lourdeshotel@yahoo.com.ar,,,Callao Av.,44.0,Callao Av. 44,,,-34.60865112857143,-58.39214321428571,-1,1596.65,Moderado
+222,Marfil,Ecuador 282,(54 11) 4861-1570,,,,Ecuador,282.0,Ecuador 282,,,-34.60693696842105,-58.40893159210526,-1,2176.95,Moderado
+224,Miki,La Rioja 271,(54 11) 4957-1614,,,,La Rioja,271.0,La Rioja 271,,,-34.613564842857144,-58.40869372857143,-1,1594.5,Moderado
+225,MiÃ±o,Gallo 1258,(54 11) 4962-3673,rodovalho@ciudad.com.ar,,,Gallo,1258.0,Gallo 1258,,,-34.5956555,-58.4114539,-1,996.55,Moderado
+227,Once Plaza,Moreno 2717,(54 11) 4932-5400,info@onceplazahteldos.com.ar,,,Moreno,2717.0,Moreno 2717,,,-34.613323126063186,-58.404459549095165,-1,822.05,Moderado
+228,Orleans,Callao Av. 680,(54 11) 4812-9342,consultas@orleanshotel.com.ar,,,Callao Av.,680.0,Callao Av. 680,,,-34.601117463265304,-58.39285892448979,-1,1345.8,Moderado
+230,Paris,Av. Donato Ãlvarez 2141,(54 11) 4581-0400,,,,Av. Donato Ãlvarez,2141.0,Av. Donato Ãlvarez 2141,,,-34.60227561020408,-58.46510864693877,-1,459.0,Seguro
+233,Rich,Paraguay 2088,(54 11) 4864-8444,,,,Paraguay,2088.0,Paraguay 2088,,,-34.59865975918368,-58.39707616938776,-1,1490.95,Moderado
+234,Rich,Bulnes 1247,(54 11) 4963-4963,,,,Bulnes,1247.0,Bulnes 1247,,,-34.588251,-58.4112129,-1,1711.85,Moderado
+237,Rosedal,Santiago Del Estero 1687,(54 11) 4304-4800,,,,Santiago Del Estero,1687.0,Santiago Del Estero 1687,,,-34.627984757142855,-58.38442115714286,2,2987.05,Riesgoso
+238,San Agustin,Pueyrredon Av. 121,(54 11) 4863-2131,hotelsanagustin@ciudad.com.ar,,,Pueyrredon Av.,121.0,Pueyrredon Av. 121,,,-34.60855298979592,-58.40589735306122,-1,2176.95,Moderado
+239,San Carlos,Moreno 3054,(54 11) 4931-7823,,,,Moreno,3054.0,Moreno 3054,,,-34.61403737755102,-58.40923113469388,-1,1594.5,Moderado
+240,San Julian,Aranguren 2528,(54 11) 4611-8607,,,,Aranguren,2528.0,Aranguren 2528,,,-34.62365010204081,-58.46705324081633,-1,350.95,Seguro
+241,Soutullo,Bogota 2519,(54 11) 4612-9406,,,,Bogota,2519.0,Bogota 2519,,,-34.62573270612245,-58.46600961836735,-1,618.2,Moderado
+243,Venezuela,Venezuela 2135,(54 11) 4942-8734,,,,Venezuela,2135.0,Venezuela 2135,,,-34.61520964693878,-58.39673716326531,-1,556.9,Moderado
+246,24 de noviembre,24 de noviembre 1057,(54 11) 4931-4661,,,,24 de noviembre,1057.0,24 de noviembre 1057,,,-34.6232697,-58.41062101428572,-1,623.5,Moderado
+247,9 de julio,Lima 1417,(54 11) 4305-3967,josemarceloteo@yahoo.com,,,Lima,1417.0,Lima 1417,,,-34.6091227,-58.3826462,-1,1136.15,Moderado
+249,Aldeano II,Pasco 136,(54 11) 4951-4102,aldeano2@hotelaldeano.com.ar,,,Pasco,136.0,Pasco 136,,,-34.61111386734694,-58.39738225918368,-1,599.5,Moderado
+250,Ancon,"Alvear, Marcelo T. De 2223",(54 11) 4824-0338,hotelancon@hotelancon.com.ar,http://hotelancon.com.ar/,,"Alvear, Marcelo T. De",2223.0,"Alvear, Marcelo T. De 2223",,,-34.5973606,-58.3950462,3,1490.95,Moderado
+251,Astur,Avellaneda 371,(54 11) 4982-9515,,,,Avellaneda,371.0,Avellaneda 371,,,-34.61309354285714,-58.43566657142857,-1,665.35,Moderado
+253,Bahia 1,Corrientes Av. 1212,(54 11) 4382-1780,"anelluz@hotmail.com,arhotelbahia@gmail.com",,,Corrientes Av.,1212.0,Corrientes Av. 1212,,,-34.604462267730895,-58.39583598211669,0,1093.9,Moderado
+254,Bahia 2,Corrientes Av. 1212,(54 11) 4382 1780,,,,Corrientes Av.,1212.0,Corrientes Av. 1212,,,-34.604462267730895,-58.39583598211669,0,1093.9,Moderado
+259,Culpina,Culpina 553,(54 11) 4611-0573,,,,Culpina,553.0,Culpina 553,,,-34.63653920408163,-58.464135285714285,-1,345.05,Seguro
+260,Ensenada,Ensenada 134,(54 11) 4672-2547,,,,Ensenada,134.0,Ensenada 134,,,-34.63476194489796,-58.47806039795918,-1,661.35,Moderado
+268,Maipo,Esmeralda 474,(54 11) 4328-4907/4393-2982,hotelmaipo@hotmail.com,,,Esmeralda,474.0,Esmeralda 474,,,-34.602697,-58.37816295,1,2096.45,Moderado
+271,Mexico,Mexico 2475,(54 11) 4942-1713,,,,Mexico,2475.0,Mexico 2475,,,-34.61645153333334,-58.40085511515152,-1,665.4,Moderado
+272,Mexico,Mexico 2944,(54 11) 4931-3087,residencial.mexico.hotel@gmail.com,,,Mexico,2944.0,Mexico 2944,,,-34.6180854,-58.40718322857143,-1,849.35,Moderado
+273,Miky,Talcahuano 362,(54 11) 4371-2376,,,,Talcahuano,362.0,Talcahuano 362,,,-34.6044921,-58.3851662,-1,1427.15,Moderado
+274,Miramar,Salta 1429,(54 11) 4306-6038,,,,Salta,1429.0,Salta 1429,,,-34.62509594285714,-58.38301211428572,-1,2987.05,Riesgoso
+275,Nazarre,Nazarre 3150,(54 11) 4501-2019,,,,Nazarre,3150.0,Nazarre 3150,,,-34.600821800000006,-58.49229565,-1,371.5,Seguro
+276,Noemi,Diaz Velez Av. 5075,(54 11) 4982-8201,,,,Diaz Velez Av.,5075.0,Diaz Velez Av. 5075,,,-34.6084065,-58.4168375,-1,807.5,Moderado
+277,O Rei,Lavalle 733,(54 11) 4393-7186,info@hotelorei.com.ar,,,Lavalle,733.0,Lavalle 733,,,-34.60228197755102,-58.37721885714286,1,2096.45,Moderado
+278,Odeon,Esmeralda 368,(54 11) 4326-0128,hotelodeon@hotmail.com,,,Esmeralda,368.0,Esmeralda 368,,,-34.60396871836734,-58.37812291020408,-1,2096.45,Moderado
+280,Olleros,Olleros 3146,(54 11) 4552-9975,,,,Olleros,3146.0,Olleros 3146,,,-34.57790536734694,-58.448117510204085,-1,501.05,Moderado
+282,Panamerican,Moreno 2754,(54 11) 4942-8807,,,,Moreno,2754.0,Moreno 2754,,,-34.61346702801207,-58.40473057041623,-1,822.05,Moderado
+284,Pinot,Diaz Velez Av. 5069,(54 11) 4962-2747,,,,Diaz Velez Av.,5069.0,Diaz Velez Av. 5069,,,-34.6084065,-58.4168375,-1,807.5,Moderado
+285,Pueyrredon,Av. PueyrredÃ³n 47,(54 11) 4862-4377,,,,Av. PueyrredÃ³n,47.0,Av. PueyrredÃ³n 47,,,-34.60947149387755,-58.40584351632653,-1,2176.95,Moderado
+286,Rey,Combate de los Pozos 471,(54 11) 4942 8412,info@hotel-rey.com.ar,,,Combate de los Pozos,471.0,Combate de los Pozos 471,,,-34.614692857142856,-58.39328844285714,-1,953.15,Moderado
+287,San Andres,San Luis 2921,(54 11) 4961-5346,,,,San Luis,2921.0,San Luis 2921,,,-34.599575822448976,-58.40652622653061,-1,822.6,Moderado
+288,San Remo,Av. Directorio 2449,(54 11) 4612-9751,info@sanremoflores.com,,,Av. Directorio,2449.0,Av. Directorio 2449,,,-34.6335275,-58.46157768089239,-1,664.45,Moderado
+289,Santa Cruz,Bogota 2858,(54 11) 4611-2133,,,,Bogota,2858.0,Bogota 2858,,,-34.62731481428571,-58.47050301428572,-1,1339.75,Moderado
+290,Sarmiento,Sarmiento 1162,(54 11) 4382-4148,,,,Sarmiento,1162.0,Sarmiento 1162,,,-34.60511005336902,-58.38307537978357,-1,1136.15,Moderado
+291,Sevilla,SolÃ­s 138,(54 11) 4372-8447,,,,SolÃ­s,138.0,SolÃ­s 138,,,-34.61070377959184,-58.39030123877552,-1,953.15,Moderado
+292,Solana,Ecuador 945,(54 11) 4962-7337,,,,Ecuador,945.0,Ecuador 945,,,-34.598908,-58.4058446,-1,822.6,Moderado
+293,Universal,Cochabamba 1364,(54 11) 4306-5718,,,,Cochabamba,1364.0,Cochabamba 1364,,,-34.62364266326531,-58.38526251632653,-1,1105.2,Moderado
+294,Victoria,Chacabuco 726,(54 11) 4351-2135,,,,Chacabuco,726.0,Chacabuco 726,,,-34.61652972040816,-58.37589675918368,6,1163.4,Moderado
+295,Washington,"Garay, Juan De Av. 340",(54 11) 4361-4738,,,,"Garay, Juan De Av.",340.0,"Garay, Juan De Av. 340",,,-34.6312942,-58.4163481,-1,347.45,Seguro
+297,Art Factory Soho,Charcas 4500,(54 11) 4774-2639,info@artfactorysoho.com.ar,https://artfactoryhostels.com.ar/es/hostels/soho,,Charcas,4500.0,Charcas 4500,,,-34.5825028,-58.4248187,-1,1314.8,Moderado
+298,La Cascada Town House Hotel,Vuelta de Obligado 4578,(54 11) 4703-1251,info@lacascadatownhouse.com.ar,,,Vuelta de Obligado,4578.0,Vuelta de Obligado 4578,,,-34.5411767755102,-58.47247962448979,-1,500.9,Moderado
+299,Telmotango,Chacabuco 679,(54 11) 4361-5808,info@hostelmotango.com,,,Chacabuco,679.0,Chacabuco 679,,,-34.61593499387755,-58.3760878,6,1163.4,Moderado
+300,Legado Mitico,Gurruchaga 1848,(54 11) 4833-1300,reservasbsas@legadomitico.com,,,Gurruchaga,1848.0,Gurruchaga 1848,,,-34.58765781258477,-58.42678911415253,-1,1026.55,Moderado
+301,Duque Hotel Boutique,Guatemala 4364,(54 11) 4832-0312,reservas@duquehotel.com,,,Guatemala,4364.0,Guatemala 4364,,,-34.58883203877551,-58.42109418367348,-1,763.05,Moderado
+302,Home Buenos Aires,Honduras 5860,(54 11) 4778-1008,info@homebuenosaires.com,,,Honduras,5860.0,Honduras 5860,,,-34.58213954897959,-58.43901304081633,-1,578.7,Moderado
+303,Hotel Boutique RacÃ³ de Buenos Aires,Yapeyu 269,(54 11) 3530 6075,info@racodebuenosaires.com.ar,,,Yapeyu,269.0,Yapeyu 269,,,-34.61544288162963,-58.42166308937828,-1,432.95,Seguro
+304,Tanguero Boutique,Suipacha 780,(54 11) 4328-7006 / 4328-7045,info@tanguerohotel.com,,,Suipacha,780.0,Suipacha 780,,,-34.59932155510204,-58.37979815306122,-1,1141.9,Moderado
+305,Mansion Vitraux,"Calvo, Carlos 369",(54 11) 4300-6886,frontdesk.boutiquesuites@boutiqueapartmentsba.com,,,"Calvo, Carlos",369.0,"Calvo, Carlos 369",,,-34.6193913,-58.3673519,-1,474.8,Seguro
+306,CasaCalma Hotel,Suipacha 1015,(54 11) 4312-5000,info@casacalmahotel.com,,,Suipacha,1015.0,Suipacha 1015,,,-34.60069995,-58.379639350000005,-1,2096.45,Moderado
+307,Fierro Hotel Boutique,Soler 5862,(54 11) 3220-6800,info@fierrohotel.com,,,Soler,5862.0,Soler 5862,,,-34.57890975,-58.43538015,-1,477.7,Seguro
+308,Ilum Experience Home,El Salvador 5726,(54 11) 4776-8667,ilum@ilumhotel.com,,,El Salvador,5726.0,El Salvador 5726,,,-34.58231686938775,-58.4367597510204,-1,578.7,Moderado
+311,AWWA Suites & Spa,Lafinur 3370,(54 11) 3966-0000,info@awwasuites.com,,,Lafinur,3370.0,Lafinur 3370,,,-34.57694219591836,-58.412196161224486,-1,313.15,Seguro
+312,Art Factory Hostel,Piedras 545,(54 11) 4343-1463,info@artfactoryba.com.ar,,,Piedras,545.0,Piedras 545,,,-34.61449535,-58.37775847267352,-1,577.0,Moderado
+313,Art Factory Palermo,Costa Rica 4353,(54 11) 2004-4958,info@artfactorypalermo.com.ar,www.artfactoryhostels.com.ar,,Costa Rica,4353.0,Costa Rica 4353,,,-34.5904455,-58.4234855,-1,571.25,Moderado
+314,Estacion Buenos Aires Hostel,Solis 458,(54 11) 4381-0734,info@hostelestacionbuenosaires.com,,,Solis,458.0,Solis 458,,,-34.61436117142858,-58.3903061,-1,953.15,Moderado
+316,O6 Central Hostel,Maipu 306,(54 11) 5219-0052/53,info@06centralhostel.com,,,Maipu,306.0,Maipu 306,,,-34.604539138775515,-58.37665218163265,-1,2096.45,Moderado
+317,Play Hostel Arcos,Charcas 4752,(54 11) 4773-0806,info@hostelsuitespalermo.com,,,Charcas,4752.0,Charcas 4752,,,-34.5811042,-58.4267513,-1,685.1,Moderado
+318,Play Hostel Soho,Guatemala 4636,(54 11) 4832-4257,info@playhostel.com,,,Guatemala,4636.0,Guatemala 4636,,,-34.586779140816326,-58.42402447551021,-1,763.05,Moderado
+319,Sabatico Traveller Hostel,Mexico 1410,(54 11) 4381-1138,info@sabaticohostel.com.ar,http://www.sabaticohostel.com.ar/,,Mexico,1410.0,Mexico 1410,,,-34.615557,-58.3861281,-1,811.25,Moderado
+321,Alvear Art Hotel,Suipacha 1036,(54 11) 4114-3400,"info@alvearart.com,recepcion.aah@alvear.com.ar",,,Suipacha,1036.0,Suipacha 1036,,,-34.60772235,-58.379254200000005,-1,838.6,Moderado
+322,Apart Independencia,Independencia Av. 1877,(54 11) 4384-1102,independencia@luzyfuerzapatagonia.com.ar,,,Independencia Av.,1877.0,Independencia Av. 1877,,,-34.6180915,-58.3801357,-1,1113.75,Moderado
+323,Bet Hotel,Saavedra 526,(54 11) 4942-3399,info@bethotelbuenosaires.com.ar,,,Saavedra,526.0,Saavedra 526,,,-34.615815240816325,-58.40275744897959,-1,665.4,Moderado
+325,Infinito Hotel Eco Design,Arenales 3689,(54 11) 4832-1060 / 2070 2626,info@infinitohotel.com,,,Arenales,3689.0,Arenales 3689,,,-34.5851334,-58.4138636,-1,1711.85,Moderado
+326,Kenton Palace,Defensa 383,(54 11) 4331-2020,reservas1@kentonpalace.com.ar,,,Defensa,383.0,Defensa 383,,,-34.61223955,-58.372144875133976,-1,934.5,Moderado
+328,Algodon Mansion,Montevideo 1647,(54 11) 3530-7777,reservations@algodonmansion.com,,,Montevideo,1647.0,Montevideo 1647,,,-34.59124114081633,-58.38743597142857,-1,471.9,Seguro
+329,Club Frances,Rodriguez PeÃ±a 1832,(54 11) 4811-0348,info@hotelclubfrances.com.ar,,,Rodriguez PeÃ±a,1832.0,Rodriguez PeÃ±a 1832,,,-34.58960627142857,-58.38769857142857,-1,478.9,Seguro
+330,Miravida Soho,Darragueyra 2050,(54 11) 4774-6433,info@miravidasoho.com,,,Darragueyra,2050.0,Darragueyra 2050,,,-34.5792936,-58.4241148,-1,604.3,Moderado
+332,Arc Recoleta,PeÃ±a 2155,(54 11) 2150-4680,reservas@archoteles.com.ar,https://www.archoteles.com.ar/,,PeÃ±a,2155.0,PeÃ±a 2155,,,-34.59138486938776,-58.39635986734694,-1,721.4,Moderado
+333,Carles Hotel,Juncal 798,(54 11) 5196-8200,info@carleshotelbuenosaires.com,www.carleshotelbuenosaires.com,,Juncal,798.0,Juncal 798,,,-34.5929572755102,-58.37845443469388,-1,804.4,Moderado
+334,Costa Rica,Costa Rica 4137,(54 11) 4864-7390,info@hotelcostarica.com.ar,,,Costa Rica,4137.0,Costa Rica 4137,,,-34.5914996,-58.42115,-1,571.25,Moderado
+335,Koten Hotel Palermo Soho,Guemes 4651,(54 11) 4771-3293,info@kotenhotel.com,,,Guemes,4651.0,Guemes 4651,,,-34.58114475510204,-58.42408747142857,-1,1314.8,Moderado
+337,Patios de San Telmo,Chacabuco 752,(54 11) 4307-0480/0965,info@patiosdesantelmo.com.ar,,,Chacabuco,752.0,Chacabuco 752,,,-34.6168614,-58.3758723,6,1163.4,Moderado
+338,Posada Gotan B&B,Sanchez de Loria 1618,(54 11) 4912-3807,posadagotan@gmail.com,,,Sanchez de Loria,1618.0,Sanchez de Loria 1618,,,-34.62944434897959,-58.411745791836736,-1,517.05,Moderado
+340,Casasur Recoleta,Callao Av. 1823,(54 11) 4515-0085,info@casasurhotel.com,,,Callao Av.,1823.0,Callao Av. 1823,,,-34.5889635877551,-58.38866110408164,-1,478.9,Seguro
+341,LÂ´Hotel Palermo,Thames 1562,(54 11) 4831-7198,info@lhotelpalermo.com,,,Thames,1562.0,Thames 1562,,,-34.5882142,-58.431528,-1,1323.65,Moderado
+342,Palo Santo Hotel,Bonpland 2275,(54 11) 5280-6100,info@palosantohotel.com,,,Bonpland,2275.0,Bonpland 2275,,,-34.5789422755102,-58.43216471224489,-1,630.35,Moderado
+343,Alvear Icon Hotel,Aime Paine 1110,(54 11) 4114-0900,reservationsicon@alvear.com.ar,,,Aime Paine,1110.0,Aime Paine 1110,,,-34.61182606678331,-58.361729228942345,-1,114.3,Muy Seguro
+344,AmÃ©rica del Sur Hostel,Chacabuco 718,(54 11) 4300-5525,baires@americahostel.com.ar,,,Chacabuco,718.0,Chacabuco 718,,,-34.6164967,-58.3758093,6,1163.4,Moderado
+345,Casasur Palermo Hotel,Costa Rica 6032,(54 11) 4770-9452,recepcion@casasurpalermo.com,,,Costa Rica,6032.0,Costa Rica 6032,,,-34.57920891632653,-58.43921320408163,-1,477.7,Seguro
+346,Feel Apartments,Fray Justo Santa MarÃ­a de Oro 2047,(54 9 11) 6368-3109,info@feelbuenosairesapartments.com,,,Fray Justo Santa MarÃ­a de Oro,2047.0,Fray Justo Santa MarÃ­a de Oro 2047,,,-34.58377551836735,-58.42831313469388,-1,685.1,Moderado
+347,Howard Johnson Plaza Buenos Aires,Lima 653,(54 11) 2205-8900,administracion.florencia@hjplazabuenosaires.com.ar,,,Lima,653.0,Lima 653,,,-34.615922318367346,-58.38175583877551,-1,1113.75,Moderado
+348,Malevo MuraÃ±a Hostel,Russel 5050,(54 11) 4831-8855,info@malevohostel.com,,,Russel,5050.0,Russel 5050,,,-34.5873888,-58.4292215,-1,1026.55,Moderado
+350,Blank,PeÃ±a 2049,(54 11) 4195-1137,reservas@blankhotel.com.ar,,,PeÃ±a,2049.0,PeÃ±a 2049,,,-34.5921347,-58.395326,-1,721.4,Moderado
+352,Faena Hotel Buenos Aires,Martha Salotti 445,(54 11) 4010-9000,info@faenahotels.com,,,Martha Salotti,445.0,Martha Salotti 445,,,-34.61407505,-58.36173260454291,-1,114.3,Muy Seguro
+353,Grand Brizo,Cerrito 180,(54 11) 3985-7800,jibanez@grandbrizohoteles,,,Cerrito,180.0,Cerrito 180,,,-34.60645494285714,-58.382202071428566,-1,1136.15,Moderado
+355,Howard Johnson Abasto by Windham,Jean Jaures 892,(54 11) 5292-5100,reservas@hjabasto.com.ar,,,Jean Jaures,892.0,Jean Jaures 892,,,-34.59978166530612,-58.40734979387755,-1,822.6,Moderado
+356,Konke Buenos Aires,Corrientes Av. 4320,(54 11) 5284-8300,gerencia@konkehotel.com,,,Corrientes Av.,4320.0,Corrientes Av. 4320,,,-34.60283768979592,-58.42601232040816,-1,695.1,Moderado
+358,Palladio Hotel Buenos Aires - MGallery,Callao Av. 924,(54 11) 4700-7500,recepcion.palladio@accor.com,,,Callao Av.,924.0,Callao Av. 924,,,-34.59832412857143,-58.39323002653062,-1,1403.95,Moderado
+359,Hub PorteÃ±o,Rodriguez PeÃ±a 1967,(54 11) 4815-6100,front@hubporteÃ±o.com,,,Rodriguez PeÃ±a,1967.0,Rodriguez PeÃ±a 1967,,,-34.58850302244898,-58.38633359183673,-1,478.9,Seguro
+360,Let Sun Hotel Boutique,Fitz Roy 1527,(54 11) 4779-1212,info@letsunhotel.com,,,Fitz Roy,1527.0,Fitz Roy 1527,,,-34.585481820000005,-58.4377009,-1,1181.65,Moderado
+361,Rendez Vous Hotel,Bonpland 1484,(54 11) 3964-5222,info@rendezvoushotel.com.ar,,,Bonpland,1484.0,Bonpland 1484,,,-34.5851053877551,-58.43948754489796,-1,1181.65,Moderado
+362,Sileo Hotel,Azcuenaga 1968,(54 11) 4809-0001,reservas@sileohotel.com,,,Azcuenaga,1968.0,Azcuenaga 1968,,,-34.5870253,-58.3947295,-1,643.55,Moderado
+363,Cassa Lepage Art Hotel,Bolivar 365,(54 11) 5275-0594 / 0595 / 0596,info@cassalepage.com,https://www.cassalepage.com/,,Bolivar,365.0,Bolivar 365,,,-34.612105246938775,-58.37339759387755,-1,934.5,Moderado
+364,Granados Hostel,Chile 374,(54 11) 4362-5600,info@granadoshostel.com,,,Chile,374.0,Chile 374,,,-34.6160442359375,-58.3713552,-1,1438.9,Moderado
+365,Hotel Huinid Obelisco,Sarmiento 1431,(54 11) 4371-4999,reservas@huinid.com,https://huinid.com/buenosaires/obelisco_hotel/,,Sarmiento,1431.0,Sarmiento 1431,,,-34.6052344,-58.3869345,-1,1129.1,Moderado
+366,OWN Grand Palermo Soho,Gurruchaga 2121,(54 11) 4831-2027,front@ownhotels.com,,,Gurruchaga,2121.0,Gurruchaga 2121,,,-34.586117914285715,-58.42414020204082,-1,763.05,Moderado
+368,Arenales Hotel,Arenales 2984,(54 11) 4828-5000,info@hotelarenales.com.ar,,,Arenales,2984.0,Arenales 2984,,,-34.5904453,-58.4068286,-1,1229.9,Moderado
+369,Recoleta Grand Hotel,Av. Las Heras 1745,(54 11) 4129-9800 int 5062,ivalerio@recoletagrand.com,,,Av. Las Heras,1745.0,Av. Las Heras 1745,,,-34.59218200816326,-58.39126396530612,-1,761.15,Moderado
+370,Bulnes Eco Suites,Bulnes 1905,(54 11) 4829-3300,info@bulneseco.com,,,Bulnes,1905.0,Bulnes 1905,,,-34.58923705714285,-58.41258777346938,-1,1711.85,Moderado
+373,Residencia Universitaria Buen DÃ­a,Lavalle 2115,(54 11) 4373-1663,,,,Lavalle,2115.0,Lavalle 2115,,,-34.603228928571426,-58.39720008571428,-1,1093.9,Moderado
+374,Callao Suites Apart Hotel Recoleta,Callao Av. 1062,(54 11) 4812-3102,info@callaosuites.com.ar,www.callaosuites.com.ar,,Callao Av.,1062.0,Callao Av. 1062,,,-34.59088880075804,-58.39094338629016,-1,761.15,Moderado
+375,Be Jardin Escondido by Coppola,Gorriti 4746,(54 11) 48328830 / 4834-6166,,,,Gorriti,4746.0,Gorriti 4746,,,-34.59116573469388,-58.428639591836735,-1,820.2,Moderado
+376,Hotel Design Suites Buenos Aires,TacuarÃ­ 243,(54 11) 3724-0700 / 4896-6340,reservas.bsas@gruposolanas.com,www.designsuites.com,,TacuarÃ­,243.0,TacuarÃ­ 243,,,-34.61112961428572,-58.37916064285714,-1,577.0,Moderado
+378,Draper Startup House,Chile 680,(54 11 ) 6434-4839,argentina@draperstartuphouse.com,https://draperstartuphouse.com/buenos-aires-argentina,,Chile,680.0,Chile 680,,,-34.6163831,-58.3755269,6,1163.4,Moderado
+381,Puerto LimÃ³n Hostel,Chacabuco 1080,(54 9 11) 3645-9086,info@puertolimon.com,www.puertolimonhostel.com,,Chacabuco,1080.0,Chacabuco 1080,,,-34.6202177,-58.3756582,-1,841.8,Moderado
+382,Lemon Suites Apartments,Chacabuco 1072,(54 11) 4307-5651,info@lemonsuites.com.ar,http://www.lemonsuites.com.ar/,,Chacabuco,1072.0,Chacabuco 1072,,,-34.6185444,-58.3758436,-1,1163.4,Moderado
+383,Juramento de Lealtad Townhouse Hotel,Juramento 2666,(54 11) 4782-0158/1946,info@townhousehotel.com.ar,http://www.townhousehotel.com.ar/,,Juramento,2666.0,Juramento 2666,,,-34.56351064897959,-58.45907582244898,-1,1277.9,Moderado
+384,Magnolia Hotel,"Alvarez, Julian 1746",(54 9 11) 4867-4900,info@magnoliahotelboutique.com,www.magnoliahotelboutique.com,,"Alvarez, Julian",1746.0,"Alvarez, Julian 1746",,,-34.6026558,-58.4394088,-1,663.3,Moderado
+386,Htl City Bs. As.,Piedras 303,(54 11) 5277-6050 / 52175799,reservas.citybaires@htlhoteles.com,www.htlhoteles.com,,Piedras,303.0,Piedras 303,,,-34.61175592244898,-58.37770026938775,-1,577.0,Moderado
+389,Hotel El Plata,"Calvo, Carlos 1274",(54 9 11) 67933468,tatin.lemeja@gmail.com,,,"Calvo, Carlos",1274.0,"Calvo, Carlos 1274",,,-34.6196634,-58.3779717,-1,1163.4,Moderado

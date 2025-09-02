@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="delitos_2023-">
+        <SrcDataSource relativeToVRT="1">delitos_2023.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>delitos_2023_revisado</SrcLayer>
+        <Field name="id-sum" src="id-sum" type="Integer"/>
+        <Field name="anio" src="anio" type="Integer"/>
+        <Field name="mes" src="mes" type="String"/>
+        <Field name="dia" src="dia" type="String"/>
+        <Field name="fecha" src="fecha" type="Date"/>
+        <Field name="franja" src="franja" type="Integer"/>
+        <Field name="tipo" src="tipo" type="String"/>
+        <Field name="subtipo" src="subtipo" type="String"/>
+        <Field name="uso_arma" src="uso_arma" type="String"/>
+        <Field name="uso_moto" src="uso_moto" type="String"/>
+        <Field name="barrio" src="barrio" type="String"/>
+        <Field name="comuna" src="comuna" type="String"/>
+        <Field name="latitud" src="latitud" type="String"/>
+        <Field name="longitud" src="longitud" type="String"/>
+        <Field name="cantidad" src="cantidad" type="Integer"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
