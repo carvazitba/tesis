@@ -1,0 +1,30 @@
+
+ANÁLISIS DE DELITO EN TORNO A CAJEROS AUTOMÁTICOS
+==============================================
+
+Promedios por anillo:
+
+Anillo 1 (0-50m):
+- Densidad: 13591.63
+- Delitos promedio: 106.58
+
+Anillo 2 (50-100m):
+- Densidad: 8206.84
+- Relativa: 1.18
+
+Anillo 3 (100-150m):
+- Densidad: 6770.85
+- Relativa: 0.95
+
+----------------------------------------------
+
+Patrón detectado: gradiente_decreciente
+
+Interpretación:
+Se observa una concentración de delitos en el entorno inmediato del cajero, que disminuye progresivamente con la distancia. Esto sugiere un posible efecto focalizador del delito.
+
+----------------------------------------------
+
+Observación metodológica:
+El análisis se basa en densidad de delitos por km² en anillos concéntricos, lo que permite evitar sesgos por superficie y analizar gradientes espaciales del delito.
+
