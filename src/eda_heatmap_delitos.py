@@ -1,82 +1,103 @@
-# Análisis Exploratorio de Datos (EDA)
+# ============================================================
+# EDA - Mapa de calor de delitos
+# Lee: tesis/data/processed/delitos_total.csv.gz
+# Guarda: tesis/outputs/mapa_delitos_heatmap.html
+# ============================================================
+
+from pathlib import Path
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import folium
 from folium.plugins import HeatMap
 import webbrowser
-import os
 
-# Configuración de gráficos
-plt.style.use('ggplot')
-
-# Crear la carpeta "EDA" si no existe
-output_dir = 'C:/Users/digni/OneDrive/Documents/GitHub/Tesis/EDA'
-os.makedirs(output_dir, exist_ok=True)
-
-# Cargar el archivo consolidado de delitos
-from pathlib import Path
+# =========================================
+# RUTAS REPRODUCIBLES
+# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
+OUTPUT_DIR = BASE_DIR / "outputs"
 
-INPUT_FILE = DATA_PROCESSED / "delitos_total.csv"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-print(f"Buscando archivo en: {INPUT_FILE}")
+INPUT_FILE = DATA_PROCESSED / "delitos_total.csv.gz"
+OUTPUT_HTML = OUTPUT_DIR / "mapa_delitos_heatmap.html"
 
-delitos_total = pd.read_csv(INPUT_FILE)
+print("===================================================")
+print("DEBUG RUTAS")
+print("===================================================")
+print(f"BASE_DIR:   {BASE_DIR}")
+print(f"INPUT_FILE: {INPUT_FILE}")
+print(f"EXISTS:     {INPUT_FILE.exists()}")
 
-# Verificación rápida del DataFrame
-print("Cantidad de registros en el DataFrame:", len(delitos_total))
-print("Primeras filas del DataFrame:")
-print(delitos_total.head())
+# =========================================
+# CARGA
+# =========================================
 
-# Verificar si el DataFrame tiene registros
-if len(delitos_total) == 0:
-    print("El DataFrame está vacío. Verifique los datos cargados.")
-else:
-    # Mapa de calor de densidad delictiva
-    print("Generando el mapa de calor de densidad delictiva...")
-    mapa_delitos = folium.Map(location=[-34.6083, -58.3712], zoom_start=12)
+if not INPUT_FILE.exists():
+    raise FileNotFoundError(f"No se encontró el archivo: {INPUT_FILE}")
 
-    # Usar una muestra de 60,000 puntos para optimizar el rendimiento
-    sample_delitos = delitos_total.sample(min(60000, len(delitos_total)))
+df = pd.read_csv(INPUT_FILE, low_memory=False)
 
-    # Filtrar datos con coordenadas válidas y convertirlas a flotante
-    sample_delitos['latitud'] = pd.to_numeric(sample_delitos['latitud'], errors='coerce')
-    sample_delitos['longitud'] = pd.to_numeric(sample_delitos['longitud'], errors='coerce')
-    sample_delitos = sample_delitos.dropna(subset=['latitud', 'longitud'])
-    sample_delitos = sample_delitos[(sample_delitos['latitud'] != 0) & (sample_delitos['longitud'] != 0)]
+print(f"Cantidad de registros: {len(df)}")
+print(df.head())
 
-    # Filtrar el rango geográfico válido para CABA
-    sample_delitos = sample_delitos[
-        (sample_delitos['latitud'].between(-34.7, -34.5)) &
-        (sample_delitos['longitud'].between(-58.6, -58.3))
-    ]
+if len(df) == 0:
+    raise ValueError("El DataFrame está vacío.")
 
-    # Crear la lista de coordenadas para el mapa de calor
-    heat_data = [[float(row['latitud']), float(row['longitud'])] for _, row in sample_delitos.iterrows()]
+# =========================================
+# LIMPIEZA / MUESTREO
+# =========================================
 
-    print(f"Cantidad de puntos en el mapa de calor: {len(heat_data)}")
+sample = df.sample(min(60000, len(df)), random_state=42).copy()
 
-    # Verificar si la lista de puntos está vacía
-    if len(heat_data) == 0:
-        print("No hay puntos válidos para el mapa de calor.")
-    else:
-        # Definir el gradiente de colores en hexadecimal
-        gradient = {
-            0.1: '#0000FF',  # Azul
-            0.5: '#00FF00',  # Verde
-            1.0: '#FF0000'   # Rojo
-        }
+sample["latitud"] = pd.to_numeric(sample["latitud"], errors="coerce")
+sample["longitud"] = pd.to_numeric(sample["longitud"], errors="coerce")
 
-        # Añadir el mapa de calor con el gradiente personalizado
-        HeatMap(heat_data, radius=8, blur=15, max_zoom=12, gradient=gradient).add_to(mapa_delitos)
+sample = sample.dropna(subset=["latitud", "longitud"])
+sample = sample[(sample["latitud"] != 0) & (sample["longitud"] != 0)]
 
-        # Guardar el mapa
-        output_path = 'C:/Users/digni/OneDrive/Documents/GitHub/Tesis/EDA/mapa_delitos.html'
-        mapa_delitos.save(output_path)
-        print(f"Mapa de delitos guardado como {output_path}")
+sample = sample[
+    (sample["latitud"].between(-34.7, -34.5)) &
+    (sample["longitud"].between(-58.6, -58.3))
+]
 
-        # Abrir el mapa en el navegador automáticamente
-        webbrowser.open(output_path)
+heat_data = sample[["latitud", "longitud"]].values.tolist()
+
+print(f"Cantidad de puntos en el mapa de calor: {len(heat_data)}")
+
+if len(heat_data) == 0:
+    raise ValueError("No hay puntos válidos para el mapa de calor.")
+
+# =========================================
+# MAPA
+# =========================================
+
+mapa = folium.Map(
+    location=[-34.6083, -58.3712],
+    zoom_start=12,
+    tiles="cartodbpositron"
+)
+
+gradient = {
+    0.1: "#0000FF",
+    0.5: "#00FF00",
+    1.0: "#FF0000"
+}
+
+HeatMap(
+    heat_data,
+    radius=8,
+    blur=15,
+    max_zoom=12,
+    gradient=gradient
+).add_to(mapa)
+
+# =========================================
+# GUARDAR / ABRIR
+# =========================================
+
+mapa.save(OUTPUT_HTML)
+print(f"🗺️ Mapa guardado en: {OUTPUT_HTML}")
+
+webbrowser.open(str(OUTPUT_HTML))

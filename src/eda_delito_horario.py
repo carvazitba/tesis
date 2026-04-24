@@ -7,13 +7,15 @@ import seaborn as sns
 # RUTAS REPRODUCIBLES
 # =========================================
 
-BASE_DIR = Path(__file__).resolve().parent  # tesis/
+# Como este script está en tesis/src/, subimos un nivel hasta tesis/
+BASE_DIR = Path(__file__).resolve().parents[1]
+
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
 OUTPUT_DIR = BASE_DIR / "outputs"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-INPUT_FILE = DATA_PROCESSED / "delitos_total.csv"
+INPUT_FILE = DATA_PROCESSED / "delitos_total.csv.gz"
 OUTPUT_IMG = OUTPUT_DIR / "histograma_franja.png"
 
 print("===================================================")
@@ -30,7 +32,7 @@ print(f"EXISTS:     {INPUT_FILE.exists()}")
 if not INPUT_FILE.exists():
     raise FileNotFoundError(f"No se encontró el archivo: {INPUT_FILE}")
 
-df = pd.read_csv(INPUT_FILE)
+df = pd.read_csv(INPUT_FILE, low_memory=False)
 
 # =========================================
 # LIMPIEZA
@@ -39,6 +41,9 @@ df = pd.read_csv(INPUT_FILE)
 df["franja"] = pd.to_numeric(df["franja"], errors="coerce")
 df = df.dropna(subset=["franja"]).copy()
 df["franja"] = df["franja"].astype(int)
+
+# Mantener solo horas válidas 0–23
+df = df[df["franja"].between(0, 23)].copy()
 
 # =========================================
 # CONTEO
@@ -57,7 +62,7 @@ colors = plt.cm.coolwarm(norm(conteo.values))
 # GRÁFICO
 # =========================================
 
-plt.figure(figsize=(12,6))
+plt.figure(figsize=(12, 6))
 sns.barplot(x=conteo.index.astype(str), y=conteo.values, palette=colors)
 
 plt.title("Cantidad de delitos por franja horaria", fontsize=14)
@@ -67,7 +72,6 @@ plt.grid(axis="y", linestyle="--", alpha=0.5)
 
 plt.tight_layout()
 
-# Guardar
 plt.savefig(OUTPUT_IMG, dpi=300)
 print(f"\n📊 Gráfico guardado en: {OUTPUT_IMG}")
 

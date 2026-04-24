@@ -22,6 +22,8 @@ print(f"📂 Cargando archivo desde: {INPUT_FILE}")
 # CARGA
 # =========================================
 
+INPUT_FILE = DATA_PROCESSED / "delitos_total.csv.gz"
+
 df = pd.read_csv(INPUT_FILE, low_memory=False)
 
 # =========================================

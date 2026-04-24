@@ -289,7 +289,11 @@ print(list(delitos_total.columns))
 # 9) GUARDAR CSV FINAL
 # ============================================================
 
-delitos_total.to_csv(OUTPUT_PATH, index=False)
+OUTPUT_GZ = OUTPUT_PATH.with_suffix(".csv.gz")
+
+delitos_total.to_csv(OUTPUT_GZ, index=False, compression='gzip')
+
+print(f"\n📁 Archivo comprimido generado en: {OUTPUT_GZ}")
 
 print("\n===================================================")
 print("PROCESO FINALIZADO")

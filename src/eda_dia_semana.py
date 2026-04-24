@@ -7,20 +7,30 @@ import seaborn as sns
 # RUTAS REPRODUCIBLES
 # =========================================
 
-BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
+# Como este script está en tesis/src/, subimos un nivel hasta tesis/
+BASE_DIR = Path(__file__).resolve().parents[1]
+
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
 OUTPUT_DIR = BASE_DIR / "outputs"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-INPUT_FILE = DATA_PROCESSED / "delitos_total.csv"
+INPUT_FILE = DATA_PROCESSED / "delitos_total.csv.gz"
 OUTPUT_IMG = OUTPUT_DIR / "eda_delitos_por_dia.png"
 
-print(f"📂 Cargando archivo desde: {INPUT_FILE}")
+print("===================================================")
+print("DEBUG RUTAS")
+print("===================================================")
+print(f"BASE_DIR:   {BASE_DIR}")
+print(f"INPUT_FILE: {INPUT_FILE}")
+print(f"EXISTS:     {INPUT_FILE.exists()}")
 
 # =========================================
 # CARGA
 # =========================================
+
+if not INPUT_FILE.exists():
+    raise FileNotFoundError(f"No se encontró el archivo: {INPUT_FILE}")
 
 df = pd.read_csv(INPUT_FILE, low_memory=False)
 
