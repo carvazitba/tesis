@@ -21,7 +21,7 @@ Contiene el código del proyecto.
 ---
 
 ### `outputs/`
-Almacena todos los resultados generados automáticamente por los scripts, aquellos que serán volcados en la tesis.
+Contiene los resultados, que serán volcados en la tesis, y han sido generados por los códigos contenidos en src.
 
 ---
 
