@@ -1,0 +1,232 @@
+﻿id,nombre,linea,ramal,barrio,comuna,anillo,distancia,cantidad_delitos,area_km2,densidad,base,densidad_relativa
+1,3 de Febrero,Mitre, Retiro - Mitre,Palermo,Comuna 14,1,0-100 m,9.0,0.03136548490540953,286.9396098017216,286.9396098017216,1.0
+1,3 de Febrero,Mitre, Retiro - Mitre,Palermo,Comuna 14,2,100-200 m,214.0,0.09409645471650507,2274.262092495852,286.9396098017216,7.9259259259026384
+1,3 de Febrero,Mitre, Retiro - Mitre,Palermo,Comuna 14,3,200-300 m,318.0,0.15682742452706455,2027.7065759319476,286.9396098017216,7.066666666665906
+35,Belgrano R,Mitre, Retiro - Mitre,Belgrano,Comuna 13,1,0-100 m,52.0,0.03136548490540953,1657.8733010766139,1657.8733010766139,1.0
+35,Belgrano R,Mitre, Retiro - Mitre,Belgrano,Comuna 13,2,100-200 m,193.0,0.09409645471650507,2051.086840428502,1657.8733010766139,1.237179487175852
+35,Belgrano R,Mitre, Retiro - Mitre,Belgrano,Comuna 13,3,200-300 m,234.0,0.15682742452706455,1492.0859709687916,1657.8733010766139,0.899999999999903
+90,Coghlan,Mitre, Retiro - Mitre,Coghlan,Comuna 12,1,0-100 m,37.0,0.03136548490540953,1179.6406180737445,1179.6406180737445,1.0
+90,Coghlan,Mitre, Retiro - Mitre,Coghlan,Comuna 12,2,100-200 m,106.0,0.09409645471650507,1126.503653292338,1179.6406180737445,0.9549549549521491
+90,Coghlan,Mitre, Retiro - Mitre,Coghlan,Comuna 12,3,200-300 m,216.0,0.15682742452706455,1377.3101270481154,1179.6406180737445,1.1675675675674417
+91,Colegiales,Mitre, Retiro - Mitre,Colegiales,Comuna 13,1,0-100 m,50.0,0.03136548490540953,1594.1089433428979,1594.1089433428979,1.0
+91,Colegiales,Mitre, Retiro - Mitre,Colegiales,Comuna 13,2,100-200 m,249.0,0.09409645471650507,2646.220845941435,1594.1089433428979,1.6599999999951225
+91,Colegiales,Mitre, Retiro - Mitre,Colegiales,Comuna 13,3,200-300 m,477.0,0.15682742452706455,3041.5598638979213,1594.1089433428979,1.9079999999997943
+119,Dr. Cetrángolo,Mitre, Retiro - Mitre,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+119,Dr. Cetrángolo,Mitre, Retiro - Mitre,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+119,Dr. Cetrángolo,Mitre, Retiro - Mitre,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+141,Florida,Mitre, Retiro - Mitre,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+141,Florida,Mitre, Retiro - Mitre,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+141,Florida,Mitre, Retiro - Mitre,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+200,Juan B. Justo,Mitre, Retiro - Mitre,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+200,Juan B. Justo,Mitre, Retiro - Mitre,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+200,Juan B. Justo,Mitre, Retiro - Mitre,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+272,Ministro Carranza,Mitre, Retiro - Mitre,Palermo,Comuna 14,1,0-100 m,295.0,0.03136548490540953,9405.242765723096,9405.242765723096,1.0
+272,Ministro Carranza,Mitre, Retiro - Mitre,Palermo,Comuna 14,2,100-200 m,351.0,0.09409645471650507,3730.214927411421,9405.242765723096,0.39661016949036015
+272,Ministro Carranza,Mitre, Retiro - Mitre,Palermo,Comuna 14,3,200-300 m,506.0,0.15682742452706455,3226.4765013256774,9405.242765723096,0.3430508474575902
+273,Mitre,Mitre, Retiro - Mitre,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+273,Mitre,Mitre, Retiro - Mitre,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+273,Mitre,Mitre, Retiro - Mitre,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+346,Saavedra,Mitre, Retiro - Mitre,Saavedra,Comuna 12,1,0-100 m,90.0,0.03136548490540953,2869.396098017216,2869.396098017216,1.0
+346,Saavedra,Mitre, Retiro - Mitre,Saavedra,Comuna 12,2,100-200 m,227.0,0.09409645471650507,2412.418200918497,2869.396098017216,0.8407407407382704
+346,Saavedra,Mitre, Retiro - Mitre,Saavedra,Comuna 12,3,200-300 m,279.0,0.15682742452706455,1779.0255807704823,2869.396098017216,0.6199999999999333
+34,Belgrano C,Mitre, Retiro - Tigre,Belgrano,Comuna 13,1,0-100 m,144.0,0.03136548490540953,4591.033756827545,4591.033756827545,1.0
+34,Belgrano C,Mitre, Retiro - Tigre,Belgrano,Comuna 13,2,100-200 m,656.0,0.09409645471650507,6971.569778865789,4591.033756827545,1.5185185185140568
+34,Belgrano C,Mitre, Retiro - Tigre,Belgrano,Comuna 13,3,200-300 m,545.0,0.15682742452706455,3475.157496487143,4591.033756827545,0.7569444444443629
+287,Núñez,Mitre, Retiro - Tigre,Nu\u00f1ez,Comuna 13,1,0-100 m,66.0,0.03136548490540953,2104.223805212625,2104.223805212625,1.0
+287,Núñez,Mitre, Retiro - Tigre,Nu\u00f1ez,Comuna 13,2,100-200 m,225.0,0.09409645471650507,2391.163415007321,2104.223805212625,1.1363636363602976
+287,Núñez,Mitre, Retiro - Tigre,Nu\u00f1ez,Comuna 13,3,200-300 m,444.0,0.15682742452706455,2831.1374833766818,2104.223805212625,1.3454545454544007
+291,Olivos,Mitre, Retiro - Tigre,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+291,Olivos,Mitre, Retiro - Tigre,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+291,Olivos,Mitre, Retiro - Tigre,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+332,Retiro LM,Mitre, Retiro - Tigre,Retiro,Comuna 1,1,0-100 m,10.0,0.03136548490540953,318.8217886685796,318.8217886685796,1.0
+332,Retiro LM,Mitre, Retiro - Tigre,Retiro,Comuna 1,2,100-200 m,111.0,0.09409645471650507,1179.6406180702784,318.8217886685796,3.6999999999891284
+332,Retiro LM,Mitre, Retiro - Tigre,Retiro,Comuna 1,3,200-300 m,1144.0,0.15682742452706455,7294.642524736315,318.8217886685796,22.879999999997533
+337,Rivadavia,Mitre, Retiro - Tigre,Nu\u00f1ez,Comuna 13,1,0-100 m,42.0,0.03136548490540953,1339.0515124080341,1339.0515124080341,1.0
+337,Rivadavia,Mitre, Retiro - Tigre,Nu\u00f1ez,Comuna 13,2,100-200 m,234.0,0.09409645471650507,2486.8099516076136,1339.0515124080341,1.8571428571374005
+337,Rivadavia,Mitre, Retiro - Tigre,Nu\u00f1ez,Comuna 13,3,200-300 m,214.0,0.15682742452706455,1364.5572555013734,1339.0515124080341,1.0190476190475093
+408,Vicente López,Mitre, Retiro - Tigre,,,1,0-100 m,1.0,0.03136548490540953,31.882178866857956,31.882178866857956,1.0
+408,Vicente López,Mitre, Retiro - Tigre,,,2,100-200 m,0.0,0.09409645471650507,0.0,31.882178866857956,0.0
+408,Vicente López,Mitre, Retiro - Tigre,,,3,200-300 m,0.0,0.15682742452706455,0.0,31.882178866857956,0.0
+9,Agustín de Elía,Roca, Temperley - Haedo,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+9,Agustín de Elía,Roca, Temperley - Haedo,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+9,Agustín de Elía,Roca, Temperley - Haedo,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+182,Ingeniero S. Brian,Roca, Temperley - Haedo,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+182,Ingeniero S. Brian,Roca, Temperley - Haedo,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+182,Ingeniero S. Brian,Roca, Temperley - Haedo,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+205,Km. 34,Roca, Temperley - Haedo,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+205,Km. 34,Roca, Temperley - Haedo,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+205,Km. 34,Roca, Temperley - Haedo,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+314,P. Turner,Roca, Temperley - Haedo,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+314,P. Turner,Roca, Temperley - Haedo,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+314,P. Turner,Roca, Temperley - Haedo,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+359,San Justo,Roca, Temperley - Haedo,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+359,San Justo,Roca, Temperley - Haedo,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+359,San Justo,Roca, Temperley - Haedo,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+383,Tablada,Roca, Temperley - Haedo,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+383,Tablada,Roca, Temperley - Haedo,,,2,100-200 m,2.0,0.09409645471650507,21.254785911176185,0.0,
+383,Tablada,Roca, Temperley - Haedo,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+12,Aldo Bonzi,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+12,Aldo Bonzi,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+12,Aldo Bonzi,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+121,Dr. Sáenz,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Nueva Pompeya,Comuna 4,1,0-100 m,25.0,0.03136548490540953,797.0544716714489,797.0544716714489,1.0
+121,Dr. Sáenz,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Nueva Pompeya,Comuna 4,2,100-200 m,91.0,0.09409645471650507,967.0927589585165,797.0544716714489,1.2133333333297682
+121,Dr. Sáenz,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Nueva Pompeya,Comuna 4,3,200-300 m,286.0,0.15682742452706455,1823.6606311840787,797.0544716714489,2.2879999999997533
+184,Isidro Casanova,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+184,Isidro Casanova,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+184,Isidro Casanova,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+195,José Ingenieros,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+195,José Ingenieros,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+195,José Ingenieros,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+203,Justo Villegas,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+203,Justo Villegas,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+203,Justo Villegas,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+260,Marinos del Fournier,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+260,Marinos del Fournier,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+260,Marinos del Fournier,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+313,Presidente Illia,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Soldati,Comuna 8,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+313,Presidente Illia,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Soldati,Comuna 8,2,100-200 m,433.0,0.09409645471650507,4601.661149769644,0.0,
+313,Presidente Illia,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Soldati,Comuna 8,3,200-300 m,176.0,0.15682742452706455,1122.2526961132792,0.0,
+354,Sánchez de Mendeville,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+354,Sánchez de Mendeville,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+354,Sánchez de Mendeville,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+385,Tapiales,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+385,Tapiales,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+385,Tapiales,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+422,Villa Lugano,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Lugano,Comuna 8,1,0-100 m,72.0,0.03136548490540953,2295.5168784137727,2295.5168784137727,1.0
+422,Villa Lugano,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Lugano,Comuna 8,2,100-200 m,390.0,0.09409645471650507,4144.683252679356,2295.5168784137727,1.8055555555502505
+422,Villa Lugano,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Lugano,Comuna 8,3,200-300 m,297.0,0.15682742452706455,1893.8014246911587,2295.5168784137727,0.8249999999999112
+424,Villa Madero,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+424,Villa Madero,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+424,Villa Madero,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,,,3,200-300 m,7.0,0.15682742452706455,44.63505041359633,0.0,
+427,Villa Soldati,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Soldati,Comuna 8,1,0-100 m,58.0,0.03136548490540953,1849.1663742777614,1849.1663742777614,1.0
+427,Villa Soldati,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Soldati,Comuna 8,2,100-200 m,208.0,0.09409645471650507,2210.4977347623235,1849.1663742777614,1.1954022988470625
+427,Villa Soldati,Belgrano Sur, Buenos Aires - M.C.G. Belgrano,Villa Soldati,Comuna 8,3,200-300 m,293.0,0.15682742452706455,1868.295681597675,1849.1663742777614,1.010344827586098
+22,Apeadero Km. 12,Belgrano Sur, Apeadero Km 12 - Libertad,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+22,Apeadero Km. 12,Belgrano Sur, Apeadero Km 12 - Libertad,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+22,Apeadero Km. 12,Belgrano Sur, Apeadero Km 12 - Libertad,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+30,Banfield,Roca, Plaza Constitución - Bosques-T,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+30,Banfield,Roca, Plaza Constitución - Bosques-T,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+30,Banfield,Roca, Plaza Constitución - Bosques-T,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+215,Lanús,Roca, Plaza Constitución - Bosques-T,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+215,Lanús,Roca, Plaza Constitución - Bosques-T,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+215,Lanús,Roca, Plaza Constitución - Bosques-T,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+151,Gerli,Roca, Plaza Constitución - Bosques-T,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+151,Gerli,Roca, Plaza Constitución - Bosques-T,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+151,Gerli,Roca, Plaza Constitución - Bosques-T,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+172,Hipólito Yrigoyen,Roca, Plaza Constitución - Bosques-T,Barracas,Comuna 4,1,0-100 m,105.0,0.03136548490540953,3347.6287810200856,3347.6287810200856,1.0
+172,Hipólito Yrigoyen,Roca, Plaza Constitución - Bosques-T,Barracas,Comuna 4,2,100-200 m,138.0,0.09409645471650507,1466.580227871157,3347.6287810200856,0.43809523809395085
+172,Hipólito Yrigoyen,Roca, Plaza Constitución - Bosques-T,Barracas,Comuna 4,3,200-300 m,222.0,0.15682742452706455,1415.5687416883409,3347.6287810200856,0.4228571428570973
+329,Remedios de Escalada,Roca, Plaza Constitución - Bosques-T,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+329,Remedios de Escalada,Roca, Plaza Constitución - Bosques-T,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+329,Remedios de Escalada,Roca, Plaza Constitución - Bosques-T,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+112,Devoto,San Martin, Retiro (LSM) - Cabred,Villa Devoto,Comuna 11,1,0-100 m,70.0,0.03136548490540953,2231.752520680057,2231.752520680057,1.0
+112,Devoto,San Martin, Retiro (LSM) - Cabred,Villa Devoto,Comuna 11,2,100-200 m,177.0,0.09409645471650507,1881.0485531390925,2231.752520680057,0.8428571428546664
+112,Devoto,San Martin, Retiro (LSM) - Cabred,Villa Devoto,Comuna 11,3,200-300 m,250.0,0.15682742452706455,1594.1089433427262,2231.752520680057,0.7142857142856374
+127,El Palomar,San Martin, Retiro (LSM) - Cabred,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+127,El Palomar,San Martin, Retiro (LSM) - Cabred,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+127,El Palomar,San Martin, Retiro (LSM) - Cabred,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+369,Santos Lugares,San Martin, Retiro (LSM) - Cabred,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+369,Santos Lugares,San Martin, Retiro (LSM) - Cabred,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+369,Santos Lugares,San Martin, Retiro (LSM) - Cabred,,,3,200-300 m,2.0,0.15682742452706455,12.752871546741808,0.0,
+67,Caseros,San Martin, Retiro (LSM) - Cabred,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+67,Caseros,San Martin, Retiro (LSM) - Cabred,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+67,Caseros,San Martin, Retiro (LSM) - Cabred,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+348,Sáenz Peña,San Martin, Retiro (LSM) - Cabred,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+348,Sáenz Peña,San Martin, Retiro (LSM) - Cabred,,,2,100-200 m,1.0,0.09409645471650507,10.627392955588093,0.0,
+348,Sáenz Peña,San Martin, Retiro (LSM) - Cabred,,,3,200-300 m,27.0,0.15682742452706455,172.16376588101443,0.0,
+415,Villa del Parque,San Martin, Retiro (LSM) - Cabred,Villa Del Parque,Comuna 11,1,0-100 m,57.0,0.03136548490540953,1817.2841954109035,1817.2841954109035,1.0
+415,Villa del Parque,San Martin, Retiro (LSM) - Cabred,Villa Del Parque,Comuna 11,2,100-200 m,251.0,0.09409645471650507,2667.4756318526115,1817.2841954109035,1.4678362573056287
+415,Villa del Parque,San Martin, Retiro (LSM) - Cabred,Villa Del Parque,Comuna 11,3,200-300 m,358.0,0.15682742452706455,2282.764006866784,1817.2841954109035,1.2561403508770577
+297,Palermo,San Martin, Retiro (LSM) - Cabred,Palermo,Comuna 14,1,0-100 m,99.0,0.03136548490540953,3156.335707818938,3156.335707818938,1.0
+297,Palermo,San Martin, Retiro (LSM) - Cabred,Palermo,Comuna 14,2,100-200 m,371.0,0.09409645471650507,3942.7627865231825,3156.335707818938,1.2491582491545787
+297,Palermo,San Martin, Retiro (LSM) - Cabred,Palermo,Comuna 14,3,200-300 m,1902.0,0.15682742452706455,12127.98084095146,3156.335707818938,3.8424242424238284
+463,Retiro LSM,San Martin, Retiro (LSM) - Cabred,Retiro,Comuna 1,1,0-100 m,11.0,0.03136548490540953,350.7039675354375,350.7039675354375,1.0
+463,Retiro LSM,San Martin, Retiro (LSM) - Cabred,Retiro,Comuna 1,2,100-200 m,113.0,0.09409645471650507,1200.8954039814546,350.7039675354375,3.424242424232363
+463,Retiro LSM,San Martin, Retiro (LSM) - Cabred,Retiro,Comuna 1,3,200-300 m,258.0,0.15682742452706455,1645.1204295296934,350.7039675354375,4.690909090908586
+93,Constitución,Roca, Plaza Constitución - La Plata,Constitucion,Comuna 1,1,0-100 m,74.0,0.03136548490540953,2359.281236147489,2359.281236147489,1.0
+93,Constitución,Roca, Plaza Constitución - La Plata,Constitucion,Comuna 1,2,100-200 m,483.0,0.09409645471650507,5133.030797549049,2359.281236147489,2.1756756756692828
+93,Constitución,Roca, Plaza Constitución - La Plata,Constitucion,Comuna 1,3,200-300 m,968.0,0.15682742452706455,6172.389828623035,2359.281236147489,2.616216216215934
+368,S. y Kosteki,Roca, Plaza Constitución - La Plata,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+368,S. y Kosteki,Roca, Plaza Constitución - La Plata,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+368,S. y Kosteki,Roca, Plaza Constitución - La Plata,,,3,200-300 m,1.0,0.15682742452706455,6.376435773370904,0.0,
+370,Sarandí,Roca, Plaza Constitución - La Plata,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+370,Sarandí,Roca, Plaza Constitución - La Plata,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+370,Sarandí,Roca, Plaza Constitución - La Plata,,,3,200-300 m,1.0,0.15682742452706455,6.376435773370904,0.0,
+418,Villa Domínico,Roca, Plaza Constitución - La Plata,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+418,Villa Domínico,Roca, Plaza Constitución - La Plata,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+418,Villa Domínico,Roca, Plaza Constitución - La Plata,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+430,Wilde,Roca, Plaza Constitución - La Plata,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+430,Wilde,Roca, Plaza Constitución - La Plata,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+430,Wilde,Roca, Plaza Constitución - La Plata,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+42,Borges,Mitre, Maipú - Delta,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+42,Borges,Mitre, Maipú - Delta,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+42,Borges,Mitre, Maipú - Delta,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+233,Libertador,Mitre, Maipú - Delta,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+233,Libertador,Mitre, Maipú - Delta,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+233,Libertador,Mitre, Maipú - Delta,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+248,Maipú,Mitre, Maipú - Delta,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+248,Maipú,Mitre, Maipú - Delta,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+248,Maipú,Mitre, Maipú - Delta,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+50,Caballito,Sarmiento, Once - Moreno,Caballito,Comuna 6,1,0-100 m,96.0,0.03136548490540953,3060.6891712183638,3060.6891712183638,1.0
+50,Caballito,Sarmiento, Once - Moreno,Caballito,Comuna 6,2,100-200 m,335.0,0.09409645471650507,3560.176640122011,3060.6891712183638,1.1631944444410267
+50,Caballito,Sarmiento, Once - Moreno,Caballito,Comuna 6,3,200-300 m,700.0,0.15682742452706455,4463.505041359633,3060.6891712183638,1.458333333333176
+84,Ciudadela,Sarmiento, Once - Moreno,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+84,Ciudadela,Sarmiento, Once - Moreno,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+84,Ciudadela,Sarmiento, Once - Moreno,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+139,Flores,Sarmiento, Once - Moreno,Flores,Comuna 7,1,0-100 m,149.0,0.03136548490540953,4750.444651161835,4750.444651161835,1.0
+139,Flores,Sarmiento, Once - Moreno,Flores,Comuna 7,2,100-200 m,448.0,0.09409645471650507,4761.0720441034655,4750.444651161835,1.0022371364623797
+139,Flores,Sarmiento, Once - Moreno,Flores,Comuna 7,3,200-300 m,1209.0,0.15682742452706455,7709.110850005423,4750.444651161835,1.6228187919461339
+140,Floresta,Sarmiento, Once - Moreno,Floresta,Comuna 10,1,0-100 m,186.0,0.03136548490540953,5930.08526923558,5930.08526923558,1.0
+140,Floresta,Sarmiento, Once - Moreno,Floresta,Comuna 10,2,100-200 m,473.0,0.09409645471650507,5026.756867993168,5930.08526923558,0.8476702508935667
+140,Floresta,Sarmiento, Once - Moreno,Floresta,Comuna 10,3,200-300 m,649.0,0.15682742452706455,4138.306816917717,5930.08526923558,0.6978494623655161
+169,Haedo,Sarmiento, Once - Moreno,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+169,Haedo,Sarmiento, Once - Moreno,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+169,Haedo,Sarmiento, Once - Moreno,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+234,Liniers,Sarmiento, Once - Moreno,Liniers,Comuna 9,1,0-100 m,594.0,0.03136548490540953,18938.014246913626,18938.014246913626,1.0
+234,Liniers,Sarmiento, Once - Moreno,Liniers,Comuna 9,2,100-200 m,1296.0,0.09409645471650507,13773.101270442168,18938.014246913626,0.7272727272705903
+234,Liniers,Sarmiento, Once - Moreno,Liniers,Comuna 9,3,200-300 m,1183.0,0.15682742452706455,7543.32351989778,18938.014246913626,0.39831649831645544
+293,Once,Sarmiento, Once - Moreno,Balvanera,Comuna 3,1,0-100 m,118.0,0.03136548490540953,3762.097106289239,3762.097106289239,1.0
+293,Once,Sarmiento, Once - Moreno,Balvanera,Comuna 3,2,100-200 m,563.0,0.09409645471650507,5983.222233996096,3762.097106289239,1.5903954802213156
+293,Once,Sarmiento, Once - Moreno,Balvanera,Comuna 3,3,200-300 m,2522.0,0.15682742452706455,16081.37102044142,3762.097106289239,4.27457627118598
+327,Ramos Mejía,Sarmiento, Once - Moreno,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+327,Ramos Mejía,Sarmiento, Once - Moreno,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+327,Ramos Mejía,Sarmiento, Once - Moreno,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+423,Villa Luro,Sarmiento, Once - Moreno,Villa Luro,Comuna 10,1,0-100 m,42.0,0.03136548490540953,1339.0515124080341,1339.0515124080341,1.0
+423,Villa Luro,Sarmiento, Once - Moreno,Villa Luro,Comuna 10,2,100-200 m,182.0,0.09409645471650507,1934.185517917033,1339.0515124080341,1.4444444444402005
+423,Villa Luro,Sarmiento, Once - Moreno,Villa Luro,Comuna 10,3,200-300 m,353.0,0.15682742452706455,2250.881827999929,1339.0515124080341,1.6809523809521998
+79,Chilavert,Mitre, Retiro - J. L. Suárez,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+79,Chilavert,Mitre, Retiro - J. L. Suárez,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+79,Chilavert,Mitre, Retiro - J. L. Suárez,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+150,General Urquiza,Mitre, Retiro - J. L. Suárez,Villa Urquiza,Comuna 12,1,0-100 m,172.0,0.03136548490540953,5483.734765099569,5483.734765099569,1.0
+150,General Urquiza,Mitre, Retiro - J. L. Suárez,Villa Urquiza,Comuna 12,2,100-200 m,742.0,0.09409645471650507,7885.525573046365,5483.734765099569,1.4379844961198058
+150,General Urquiza,Mitre, Retiro - J. L. Suárez,Villa Urquiza,Comuna 12,3,200-300 m,547.0,0.15682742452706455,3487.910368033885,5483.734765099569,0.6360465116278384
+190,J. L. Suárez,Mitre, Retiro - J. L. Suárez,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+190,J. L. Suárez,Mitre, Retiro - J. L. Suárez,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+190,J. L. Suárez,Mitre, Retiro - J. L. Suárez,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+236,L. M. Drago,Mitre, Retiro - J. L. Suárez,Villa Urquiza,Comuna 12,1,0-100 m,61.0,0.03136548490540953,1944.8129108783353,1944.8129108783353,1.0
+236,L. M. Drago,Mitre, Retiro - J. L. Suárez,Villa Urquiza,Comuna 12,2,100-200 m,214.0,0.09409645471650507,2274.262092495852,1944.8129108783353,1.1693989071003892
+236,L. M. Drago,Mitre, Retiro - J. L. Suárez,Villa Urquiza,Comuna 12,3,200-300 m,324.0,0.15682742452706455,2065.965190572173,1944.8129108783353,1.0622950819670987
+249,Malaver,Mitre, Retiro - J. L. Suárez,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+249,Malaver,Mitre, Retiro - J. L. Suárez,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+249,Malaver,Mitre, Retiro - J. L. Suárez,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+271,Miguelete,Mitre, Retiro - J. L. Suárez,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+271,Miguelete,Mitre, Retiro - J. L. Suárez,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+271,Miguelete,Mitre, Retiro - J. L. Suárez,,,3,200-300 m,12.0,0.15682742452706455,76.51722928045085,0.0,
+318,Pueyrredón,Mitre, Retiro - J. L. Suárez,Villa Pueyrredon,Comuna 12,1,0-100 m,30.0,0.03136548490540953,956.4653660057387,956.4653660057387,1.0
+318,Pueyrredón,Mitre, Retiro - J. L. Suárez,Villa Pueyrredon,Comuna 12,2,100-200 m,117.0,0.09409645471650507,1243.4049758038068,956.4653660057387,1.2999999999961802
+318,Pueyrredón,Mitre, Retiro - J. L. Suárez,Villa Pueyrredon,Comuna 12,3,200-300 m,204.0,0.15682742452706455,1300.7928977676645,956.4653660057387,1.3599999999998535
+353,San Andrés,Mitre, Retiro - J. L. Suárez,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+353,San Andrés,Mitre, Retiro - J. L. Suárez,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+353,San Andrés,Mitre, Retiro - J. L. Suárez,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+360,San Martín,Mitre, Retiro - J. L. Suárez,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+360,San Martín,Mitre, Retiro - J. L. Suárez,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+360,San Martín,Mitre, Retiro - J. L. Suárez,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+412,Villa Ballester,Mitre, Retiro - J. L. Suárez,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+412,Villa Ballester,Mitre, Retiro - J. L. Suárez,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+412,Villa Ballester,Mitre, Retiro - J. L. Suárez,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+181,Ingeniero Castello,Belgrano Sur, Buenos Aires - Gonzalez Catán,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+181,Ingeniero Castello,Belgrano Sur, Buenos Aires - Gonzalez Catán,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+181,Ingeniero Castello,Belgrano Sur, Buenos Aires - Gonzalez Catán,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
+321,Querandí,Belgrano Sur, Buenos Aires - Gonzalez Catán,,,1,0-100 m,0.0,0.03136548490540953,0.0,0.0,
+321,Querandí,Belgrano Sur, Buenos Aires - Gonzalez Catán,,,2,100-200 m,0.0,0.09409645471650507,0.0,0.0,
+321,Querandí,Belgrano Sur, Buenos Aires - Gonzalez Catán,,,3,200-300 m,0.0,0.15682742452706455,0.0,0.0,
