@@ -1,30 +1,40 @@
 
 ANÁLISIS DE DELITO EN TORNO A CAJEROS AUTOMÁTICOS
-==============================================
+=================================================
 
 Promedios por anillo:
 
-Anillo 1 (0-50m):
-- Densidad: 13591.63
-- Delitos promedio: 106.58
+Anillo 1 (0-50 m):
+- Delitos totales: 136312
+- Densidad promedio: 13591.63 delitos/km²
+- Densidad relativa global: 1.00
 
-Anillo 2 (50-100m):
-- Densidad: 8206.84
-- Relativa: 1.18
+Anillo 2 (50-100 m):
+- Delitos totales: 246922
+- Densidad promedio: 8206.84 delitos/km²
+- Densidad relativa global: 0.60
 
-Anillo 3 (100-150m):
-- Densidad: 6770.85
-- Relativa: 0.95
+Anillo 3 (100-150 m):
+- Delitos totales: 339528
+- Densidad promedio: 6770.85 delitos/km²
+- Densidad relativa global: 0.50
 
-----------------------------------------------
+-------------------------------------------------
 
 Patrón detectado: gradiente_decreciente
 
 Interpretación:
-Se observa una concentración de delitos en el entorno inmediato del cajero, que disminuye progresivamente con la distancia. Esto sugiere un posible efecto focalizador del delito.
+Se observa una concentración de delitos en el entorno inmediato del cajero, con una disminución progresiva de la densidad a medida que aumenta la distancia.
 
-----------------------------------------------
+-------------------------------------------------
 
 Observación metodológica:
-El análisis se basa en densidad de delitos por km² en anillos concéntricos, lo que permite evitar sesgos por superficie y analizar gradientes espaciales del delito.
+El análisis se basa en densidad de delitos por km² en tres anillos concéntricos
+de 50 metros alrededor de cajeros automáticos. La normalización por superficie
+permite comparar zonas de distinto tamaño y evaluar gradientes espaciales del delito.
 
+Archivo CSV generado:
+C:\Users\digni\tesis\outputs\anillos_cajeros_3anillos_50m.csv
+
+Mapa interactivo generado:
+C:\Users\digni\tesis\outputs\mapa_cajeros_3anillos_50m.html
