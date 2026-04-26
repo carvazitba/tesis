@@ -2,8 +2,16 @@ pandas
 numpy
 matplotlib
 seaborn
+geopandas
+shapely
+pyproj
 folium
+branca
+geopy
+scikit-learn
+scipy
 openpyxl
+tqdm
 
 # dejo abajo para copy/paste en la consola
 # pip install -r libs.txt
