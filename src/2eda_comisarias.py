@@ -5,9 +5,7 @@ import geopandas as gpd
 import folium
 import branca.colormap as cm
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parent  # tesis/
 DATA_RAW = BASE_DIR / "data" / "raw"
@@ -28,9 +26,7 @@ print("===================================================")
 print(f"DELITOS: {DELITOS_PATH}")
 print(f"COMISARIAS: {COMISARIAS_PATH}")
 
-# =========================================
 # CARGA DE DATOS
-# =========================================
 
 if not DELITOS_PATH.exists():
     raise FileNotFoundError(f"No se encontró: {DELITOS_PATH}")
@@ -41,9 +37,7 @@ if not COMISARIAS_PATH.exists():
 delitos = pd.read_csv(DELITOS_PATH, low_memory=False)
 comisarias = pd.read_excel(COMISARIAS_PATH)
 
-# =========================================
 # LIMPIEZA
-# =========================================
 
 delitos["latitud"] = pd.to_numeric(delitos["latitud"], errors="coerce")
 delitos["longitud"] = pd.to_numeric(delitos["longitud"], errors="coerce")
@@ -53,9 +47,7 @@ comisarias["lat"] = pd.to_numeric(comisarias["lat"], errors="coerce")
 comisarias["long"] = pd.to_numeric(comisarias["long"], errors="coerce")
 comisarias = comisarias.dropna(subset=["lat", "long"]).copy()
 
-# =========================================
 # GEO DATAFRAMES
-# =========================================
 
 delitos_gdf = gpd.GeoDataFrame(
     delitos,
@@ -69,16 +61,12 @@ comisarias_gdf = gpd.GeoDataFrame(
     crs="EPSG:4326"
 )
 
-# =========================================
 # PROYECCIÓN MÉTRICA
-# =========================================
 
 delitos_m = delitos_gdf.to_crs(epsg=3857)
 comisarias_m = comisarias_gdf.to_crs(epsg=3857)
 
-# =========================================
 # CREAR ANILLOS (300 m)
-# =========================================
 
 distancias = [0, 300, 600, 900, 1200]
 anillos = []
@@ -104,9 +92,7 @@ for _, row in comisarias_m.iterrows():
 
 anillos_gdf = gpd.GeoDataFrame(anillos, crs="EPSG:3857")
 
-# =========================================
 # SPATIAL JOIN
-# =========================================
 
 join = gpd.sjoin(delitos_m, anillos_gdf, how="inner", predicate="within")
 
@@ -119,9 +105,7 @@ conteos = (
 anillos_gdf = anillos_gdf.merge(conteos, on=["id", "anillo"], how="left")
 anillos_gdf["cantidad_delitos"] = anillos_gdf["cantidad_delitos"].fillna(0)
 
-# =========================================
 # DENSIDAD
-# =========================================
 
 anillos_gdf["area_km2"] = anillos_gdf.geometry.area / 1e6
 anillos_gdf["densidad"] = anillos_gdf["cantidad_delitos"] / anillos_gdf["area_km2"]
@@ -134,15 +118,11 @@ anillos_gdf = anillos_gdf.merge(base, on="id", how="left")
 
 anillos_gdf["dens_rel"] = anillos_gdf["densidad"] / anillos_gdf["base"]
 
-# =========================================
 # EXPORT CSV
-# =========================================
 
 anillos_gdf.drop(columns="geometry").to_csv(OUTPUT_CSV, index=False)
 
-# =========================================
 # MAPA
-# =========================================
 
 anillos_wgs84 = anillos_gdf.to_crs(epsg=4326)
 

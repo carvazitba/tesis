@@ -7,9 +7,7 @@ import seaborn as sns
 import scipy.stats as stats
 from shapely.geometry import box
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 
@@ -33,9 +31,7 @@ print(f"ALOJAMIENTOS: {ALOJ_PATH}")
 print(f"EXISTS DELITOS: {DELITOS_PATH.exists()}")
 print(f"EXISTS ALOJAMIENTOS: {ALOJ_PATH.exists()}")
 
-# =========================================
 # CARGA DE DATOS
-# =========================================
 
 if not DELITOS_PATH.exists():
     raise FileNotFoundError(f"No se encontró: {DELITOS_PATH}")
@@ -47,9 +43,7 @@ print("Cargando datasets...")
 delitos = pd.read_csv(DELITOS_PATH, low_memory=False)
 alojamientos = pd.read_csv(ALOJ_PATH, encoding="latin1", sep=",", low_memory=False)
 
-# =========================================
 # LIMPIEZA
-# =========================================
 
 delitos.columns = delitos.columns.str.strip().str.lower()
 alojamientos.columns = alojamientos.columns.str.strip().str.lower()
@@ -63,9 +57,7 @@ alojamientos["longitud"] = pd.to_numeric(alojamientos["longitud"], errors="coerc
 delitos = delitos.dropna(subset=["latitud", "longitud"]).copy()
 alojamientos = alojamientos.dropna(subset=["latitud", "longitud"]).copy()
 
-# =========================================
 # PONDERACIÓN TEMPORAL
-# =========================================
 
 def asignar_peso(anio):
     if anio == 2023:
@@ -80,9 +72,7 @@ def asignar_peso(anio):
 delitos["anio"] = pd.to_numeric(delitos["anio"], errors="coerce")
 delitos["peso"] = delitos["anio"].apply(asignar_peso)
 
-# =========================================
 # GEODATAFRAMES
-# =========================================
 
 print("Proyectando a sistema métrico (EPSG:3857)...")
 
@@ -98,9 +88,7 @@ aloj_gdf = gpd.GeoDataFrame(
     crs="EPSG:4326"
 ).to_crs("EPSG:3857")
 
-# =========================================
 # CREAR GRILLA 500 x 500 m
-# =========================================
 
 print("Creando grilla regular de 500x500 metros...")
 
@@ -117,9 +105,7 @@ grilla_gdf = gpd.GeoDataFrame(grid_cells, columns=["geometry"], crs="EPSG:3857")
 grilla_gdf["id_celda"] = grilla_gdf.index
 grilla_gdf["area_km2"] = grilla_gdf.geometry.area / 1e6
 
-# =========================================
 # SPATIAL JOINS
-# =========================================
 
 print("Ejecutando cruces espaciales...")
 
@@ -151,9 +137,7 @@ grilla_gdf[["delitos_ponderados", "cant_alojamientos"]] = (
     grilla_gdf[["delitos_ponderados", "cant_alojamientos"]].fillna(0)
 )
 
-# =========================================
 # DENSIDADES
-# =========================================
 
 grilla_gdf["densidad_delitos"] = grilla_gdf["delitos_ponderados"] / grilla_gdf["area_km2"]
 grilla_gdf["densidad_alojamientos"] = grilla_gdf["cant_alojamientos"] / grilla_gdf["area_km2"]
@@ -163,16 +147,12 @@ grilla_activa = grilla_gdf[
     (grilla_gdf["cant_alojamientos"] > 0)
 ].copy()
 
-# =========================================
 # EXPORTAR MATRIZ
-# =========================================
 
 grilla_activa.drop(columns=["geometry"]).to_csv(OUTPUT_MATRIZ, index=False)
 print(f"✅ Matriz Maestra guardada en: {OUTPUT_MATRIZ}")
 
-# =========================================
 # CORRELACIÓN + GRÁFICO
-# =========================================
 
 print("Generando gráfico de dispersión...")
 

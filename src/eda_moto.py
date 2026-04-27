@@ -3,9 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
@@ -18,33 +16,25 @@ OUTPUT_IMG = OUTPUT_DIR / "eda_uso_moto.png"
 
 print(f"📂 Cargando archivo desde: {INPUT_FILE}")
 
-# =========================================
 # CARGA
-# =========================================
 
 INPUT_FILE = DATA_PROCESSED / "delitos_total.csv.gz"
 
 df = pd.read_csv(INPUT_FILE)
 
-# =========================================
 # LIMPIEZA
-# =========================================
 
 df['uso_moto'] = df['uso_moto'].astype(str).str.strip().str.upper()
 
 # Filtrar solo valores válidos
 df = df[df['uso_moto'].isin(['SI', 'NO'])]
 
-# =========================================
 # CONTEO
-# =========================================
 
 conteo = df['uso_moto'].value_counts().reindex(['SI', 'NO']).fillna(0)
 porcentajes = conteo / conteo.sum() * 100
 
-# =========================================
 # GRÁFICO
-# =========================================
 
 plt.figure(figsize=(6,5))
 ax = sns.barplot(x=conteo.index, y=conteo.values)

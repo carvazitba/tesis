@@ -1,17 +1,13 @@
-# ============================================================
 # Pipeline reproducible de limpieza y consolidación de delitos
 # Lee archivos desde: tesis/data/raw/
 # Guarda salida en: tesis/data/processed/delitos_total.csv
-# ============================================================
 
 from pathlib import Path
 import pandas as pd
 import numpy as np
 
 
-# ============================================================
 # 1) RUTAS REPRODUCIBLES
-# ============================================================
 
 # Este script debe estar ubicado en: tesis/src/
 # BASE_DIR apunta a la carpeta raíz del proyecto: tesis/
@@ -33,9 +29,7 @@ print(f"Carpeta de salida:         {DATA_PROCESSED}")
 print(f"Archivo de salida:         {OUTPUT_PATH}")
 
 
-# ============================================================
 # 2) FUNCIÓN: CORREGIR DECIMALES MAL FORMATEADOS
-# ============================================================
 
 def corregir_decimal(valor):
     """
@@ -79,9 +73,7 @@ def corregir_decimal(valor):
         return np.nan
 
 
-# ============================================================
 # 3) FUNCIÓN: VALIDAR / CORREGIR RANGO CABA
-# ============================================================
 
 def corregir_coordenadas(lat, lon):
     """
@@ -110,9 +102,7 @@ def corregir_coordenadas(lat, lon):
     return lat, lon
 
 
-# ============================================================
 # 4) ARCHIVOS DE ENTRADA
-# ============================================================
 
 archivos_delitos = [
     "delitos_2016.xlsx",
@@ -125,9 +115,7 @@ archivos_delitos = [
 ]
 
 
-# ============================================================
 # 5) CONTADORES GLOBALES
-# ============================================================
 
 datasets_limpios = []
 
@@ -138,9 +126,7 @@ total_global_decimal_fix = 0
 total_global_invalid_rango = 0
 
 
-# ============================================================
 # 6) LOOP DE CARGA + LIMPIEZA
-# ============================================================
 
 for archivo in archivos_delitos:
 
@@ -258,9 +244,7 @@ for archivo in archivos_delitos:
     datasets_limpios.append(df)
 
 
-# ============================================================
 # 7) UNIFICACIÓN FINAL
-# ============================================================
 
 if not datasets_limpios:
     raise ValueError("No se cargó ningún dataset válido.")
@@ -268,9 +252,7 @@ if not datasets_limpios:
 delitos_total = pd.concat(datasets_limpios, ignore_index=True)
 
 
-# ============================================================
 # 8) RESUMEN GLOBAL
-# ============================================================
 
 print("\n\n===================================================")
 print("RESUMEN GLOBAL")
@@ -285,9 +267,7 @@ print("\nColumnas del dataset final:")
 print(list(delitos_total.columns))
 
 
-# ============================================================
 # 9) GUARDAR CSV FINAL
-# ============================================================
 
 OUTPUT_GZ = OUTPUT_PATH.with_suffix(".csv.gz")
 

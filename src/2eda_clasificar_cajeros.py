@@ -5,9 +5,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 
@@ -37,9 +35,7 @@ if not DELITOS_PATH.exists():
 if not CAJEROS_PATH.exists():
     raise FileNotFoundError(f"No se encontró: {CAJEROS_PATH}")
 
-# =========================================
 # CARGA DE DATOS
-# =========================================
 
 print("Cargando datos...")
 delitos = pd.read_csv(DELITOS_PATH, low_memory=False)
@@ -48,9 +44,7 @@ cajeros = pd.read_csv(CAJEROS_PATH, low_memory=False)
 delitos.columns = delitos.columns.str.strip().str.lower()
 cajeros.columns = cajeros.columns.str.strip().str.lower()
 
-# =========================================
 # FILTRADO METODOLÓGICO: ROBO Y HURTO
-# =========================================
 
 col_tipo = "tipo_delito" if "tipo_delito" in delitos.columns else "tipo"
 
@@ -59,9 +53,7 @@ if col_tipo in delitos.columns:
     delitos = delitos[delitos[col_tipo].isin(["robo", "hurto"])].copy()
     print(f"✅ Filtro aplicado: Robos y Hurtos ({len(delitos)} registros)")
 
-# =========================================
 # LIMPIEZA DE COORDENADAS
-# =========================================
 
 delitos["latitud"] = pd.to_numeric(delitos["latitud"], errors="coerce")
 delitos["longitud"] = pd.to_numeric(delitos["longitud"], errors="coerce")
@@ -72,9 +64,7 @@ cajeros["long"] = pd.to_numeric(cajeros["long"], errors="coerce")
 delitos = delitos.dropna(subset=["latitud", "longitud"]).copy()
 cajeros = cajeros.dropna(subset=["lat", "long"]).copy()
 
-# =========================================
 # GEO DATAFRAMES
-# =========================================
 
 delitos_gdf = gpd.GeoDataFrame(
     delitos,
@@ -88,9 +78,7 @@ cajeros_gdf = gpd.GeoDataFrame(
     crs="EPSG:4326"
 ).to_crs("EPSG:3857")
 
-# =========================================
 # GENERAR 3 ANILLOS DE 50 METROS
-# =========================================
 
 print("Generando anillos de 50 metros...")
 
@@ -123,9 +111,7 @@ for idx, cajero in cajeros_gdf.iterrows():
 
 anillos_gdf = gpd.GeoDataFrame(anillos, crs="EPSG:3857")
 
-# =========================================
 # SPATIAL JOIN CON DEDUPLICACIÓN
-# =========================================
 
 print("Cruzando delitos y eliminando superposiciones...")
 
@@ -148,9 +134,7 @@ anillos_gdf["cantidad"] = anillos_gdf["cantidad"].fillna(0)
 
 anillos_gdf["densidad"] = anillos_gdf["cantidad"] / anillos_gdf["area_km2"]
 
-# =========================================
 # TABLA POR CAJERO
-# =========================================
 
 df_res = (
     anillos_gdf
@@ -168,9 +152,7 @@ meta_cajeros = (
 
 df_res = df_res.merge(meta_cajeros, on="id_cajero", how="left")
 
-# =========================================
 # CLASIFICACIÓN
-# =========================================
 
 def clasificar(row):
     dens = [row["densidad_1"], row["densidad_2"], row["densidad_3"]]
@@ -189,16 +171,12 @@ def clasificar(row):
 
 df_res["tipo"] = df_res.apply(clasificar, axis=1)
 
-# =========================================
 # EXPORTAR RESULTADOS
-# =========================================
 
 df_res.to_csv(OUTPUT_CSV, index=False)
 print(f"💾 CSV guardado en: {OUTPUT_CSV}")
 
-# =========================================
 # RESUMEN
-# =========================================
 
 df_activos = df_res[df_res["tipo"] != "Sin delitos"].copy()
 
@@ -213,9 +191,7 @@ resumen = resumen.sort_values("tipo")
 print("\n📊 Clasificación de cajeros con actividad delictiva:")
 print(resumen.to_string(index=False, float_format="%.2f"))
 
-# =========================================
 # GRÁFICO PUBLICABLE
-# =========================================
 
 plt.figure(figsize=(9, 6))
 

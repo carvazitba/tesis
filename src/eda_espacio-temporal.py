@@ -3,9 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 
@@ -26,9 +24,7 @@ print(f"EXISTS:     {INPUT_FILE.exists()}")
 if not INPUT_FILE.exists():
     raise FileNotFoundError(f"No se encontró: {INPUT_FILE}")
 
-# =========================================
 # CARGA Y LIMPIEZA DE DATOS
-# =========================================
 
 print("Cargando dataset...")
 df = pd.read_csv(INPUT_FILE, low_memory=False)
@@ -51,9 +47,7 @@ df["dia"] = (
 orden_dias = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 df = df[df["dia"].isin(orden_dias)].copy()
 
-# =========================================
 # MATRIZ BIVARIADA DÍA x HORA
-# =========================================
 
 print("Generando matriz de calor...")
 
@@ -61,9 +55,7 @@ matriz_calor = pd.crosstab(df["dia"], df["franja"])
 matriz_calor = matriz_calor.reindex(orden_dias)
 matriz_calor = matriz_calor.reindex(columns=range(24), fill_value=0)
 
-# =========================================
 # HEATMAP
-# =========================================
 
 plt.figure(figsize=(14, 6))
 

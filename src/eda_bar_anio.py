@@ -3,9 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
@@ -18,24 +16,18 @@ OUTPUT_IMG = OUTPUT_DIR / "bar_delitos_por_anio.png"
 
 print(f"📂 Cargando archivo desde: {INPUT_FILE}")
 
-# =========================================
 # CARGA
-# =========================================
 
 INPUT_FILE = DATA_PROCESSED / "delitos_total.csv.gz"
 
 df = pd.read_csv(INPUT_FILE)
 
-# =========================================
 # AGRUPACIÓN
-# =========================================
 
 conteo = df['anio'].value_counts().sort_index()
 porcentajes = conteo / conteo.sum() * 100
 
-# =========================================
 # GRÁFICO
-# =========================================
 
 plt.figure(figsize=(8,5))
 ax = sns.barplot(x=conteo.index.astype(str), y=conteo.values)

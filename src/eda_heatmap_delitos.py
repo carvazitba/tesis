@@ -10,9 +10,7 @@ import folium
 from folium.plugins import HeatMap
 import webbrowser
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
@@ -30,9 +28,7 @@ print(f"BASE_DIR:   {BASE_DIR}")
 print(f"INPUT_FILE: {INPUT_FILE}")
 print(f"EXISTS:     {INPUT_FILE.exists()}")
 
-# =========================================
 # CARGA
-# =========================================
 
 if not INPUT_FILE.exists():
     raise FileNotFoundError(f"No se encontró el archivo: {INPUT_FILE}")
@@ -45,9 +41,7 @@ print(df.head())
 if len(df) == 0:
     raise ValueError("El DataFrame está vacío.")
 
-# =========================================
 # LIMPIEZA / MUESTREO
-# =========================================
 
 sample = df.sample(min(60000, len(df)), random_state=42).copy()
 
@@ -69,9 +63,7 @@ print(f"Cantidad de puntos en el mapa de calor: {len(heat_data)}")
 if len(heat_data) == 0:
     raise ValueError("No hay puntos válidos para el mapa de calor.")
 
-# =========================================
 # MAPA
-# =========================================
 
 mapa = folium.Map(
     location=[-34.6083, -58.3712],
@@ -93,9 +85,7 @@ HeatMap(
     gradient=gradient
 ).add_to(mapa)
 
-# =========================================
 # GUARDAR / ABRIR
-# =========================================
 
 mapa.save(OUTPUT_HTML)
 print(f"🗺️ Mapa guardado en: {OUTPUT_HTML}")

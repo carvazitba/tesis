@@ -5,9 +5,7 @@ import geopandas as gpd
 import folium
 import branca.colormap as cm
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 
@@ -24,9 +22,7 @@ BARRIOS_PATH = DATA_RAW / "barrios.csv"
 OUTPUT_HTML = OUTPUT_DIR / "mapa_ferrocarril_caba.html"
 OUTPUT_CSV = OUTPUT_DIR / "anillos_ferrocarril_caba.csv"
 
-# =========================================
 # CARGA DE DATOS
-# =========================================
 
 print("📂 Cargando delitos...")
 delitos = pd.read_csv(DELITOS_PATH, low_memory=False)
@@ -37,17 +33,13 @@ estaciones = pd.read_csv(ESTACIONES_PATH, low_memory=False)
 print("📂 Cargando barrios...")
 barrios = pd.read_csv(BARRIOS_PATH)
 
-# =========================================
 # LIMPIEZA GENERAL
-# =========================================
 
 delitos.columns = delitos.columns.str.strip().str.lower()
 estaciones.columns = estaciones.columns.str.strip().str.lower()
 barrios.columns = barrios.columns.str.strip().str.lower()
 
-# =========================================
 # LIMPIEZA DELITOS
-# =========================================
 
 col_tipo = "tipo_delito" if "tipo_delito" in delitos.columns else "tipo"
 
@@ -68,9 +60,7 @@ delitos = delitos[
 
 print(f"✅ Delitos con coordenadas válidas: {len(delitos):,}")
 
-# =========================================
 # LIMPIEZA ESTACIONES
-# =========================================
 
 estaciones["lat"] = pd.to_numeric(estaciones["lat"], errors="coerce")
 estaciones["long"] = pd.to_numeric(estaciones["long"], errors="coerce")
@@ -86,9 +76,7 @@ else:
 
 print(f"✅ Estaciones con coordenadas válidas: {len(estaciones):,}")
 
-# =========================================
 # FILTRAR ESTACIONES DENTRO DE CABA
-# =========================================
 
 print("📍 Filtrando estaciones dentro del límite oficial de CABA...")
 
@@ -120,9 +108,7 @@ if "index_right" in estaciones_gdf.columns:
 
 print(f"✅ Estaciones dentro de CABA: {len(estaciones_gdf):,}")
 
-# =========================================
 # GEODATAFRAME DE DELITOS
-# =========================================
 
 delitos_gdf = gpd.GeoDataFrame(
     delitos,
@@ -134,9 +120,7 @@ delitos_gdf = gpd.GeoDataFrame(
 delitos_m = delitos_gdf.to_crs(epsg=3857)
 estaciones_m = estaciones_gdf.to_crs(epsg=3857)
 
-# =========================================
 # CREACIÓN DE ANILLOS
-# =========================================
 
 print("🧩 Creando anillos alrededor de estaciones...")
 
@@ -166,9 +150,7 @@ anillos_gdf = gpd.GeoDataFrame(anillos, crs="EPSG:3857")
 
 print(f"✅ Anillos generados: {len(anillos_gdf):,}")
 
-# =========================================
 # SPATIAL JOIN SIN DOBLE CONTEO
-# =========================================
 
 print("📍 Cruzando delitos con anillos de estaciones...")
 
@@ -199,9 +181,7 @@ anillos_gdf = anillos_gdf.merge(
 
 anillos_gdf["cantidad_delitos"] = anillos_gdf["cantidad_delitos"].fillna(0)
 
-# =========================================
 # CÁLCULO DE DENSIDADES
-# =========================================
 
 anillos_gdf["area_km2"] = anillos_gdf.geometry.area / 1_000_000
 anillos_gdf["densidad"] = (
@@ -224,9 +204,7 @@ anillos_gdf["densidad_relativa"] = np.where(
     np.nan
 )
 
-# =========================================
 # EXPORTAR CSV
-# =========================================
 
 anillos_gdf.drop(columns="geometry").to_csv(
     OUTPUT_CSV,
@@ -236,9 +214,7 @@ anillos_gdf.drop(columns="geometry").to_csv(
 
 print(f"💾 CSV guardado en: {OUTPUT_CSV}")
 
-# =========================================
 # MAPA
-# =========================================
 
 print("🗺️ Generando mapa...")
 
@@ -331,9 +307,7 @@ mapa.save(OUTPUT_HTML)
 
 print(f"🗺️ Mapa guardado en: {OUTPUT_HTML}")
 
-# =========================================
 # RESUMEN ESTADÍSTICO
-# =========================================
 
 print("\n📊 RESUMEN ESTADÍSTICO")
 

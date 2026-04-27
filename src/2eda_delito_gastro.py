@@ -7,9 +7,8 @@ import seaborn as sns
 import scipy.stats as stats
 from shapely.geometry import box
 
-# =========================================
+
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 
@@ -39,17 +38,17 @@ if not DELITOS_PATH.exists():
 if not GASTRO_PATH.exists():
     raise FileNotFoundError(f"No se encontró: {GASTRO_PATH}")
 
-# =========================================
+
 # CARGA DE DATOS
-# =========================================
+
 
 print("Cargando datasets...")
 delitos = pd.read_csv(DELITOS_PATH, low_memory=False)
 gastronomia = pd.read_excel(GASTRO_PATH)
 
-# =========================================
+
 # LIMPIEZA
-# =========================================
+
 
 delitos.columns = delitos.columns.str.strip().str.lower()
 gastronomia.columns = gastronomia.columns.str.strip().str.lower()
@@ -67,9 +66,7 @@ delitos["longitud"] = pd.to_numeric(delitos["longitud"], errors="coerce")
 delitos = delitos.dropna(subset=["latitud", "longitud"]).copy()
 gastronomia = gastronomia.dropna(subset=[lat_col, lon_col]).copy()
 
-# =========================================
 # PONDERACIÓN TEMPORAL
-# =========================================
 
 def asignar_peso(anio):
     if anio == 2023: return 1.0
@@ -80,9 +77,7 @@ def asignar_peso(anio):
 delitos["anio"] = pd.to_numeric(delitos["anio"], errors="coerce")
 delitos["peso"] = delitos["anio"].apply(asignar_peso)
 
-# =========================================
 # GEO DATAFRAMES
-# =========================================
 
 print("Proyectando a sistema métrico...")
 
@@ -98,9 +93,7 @@ gastro_gdf = gpd.GeoDataFrame(
     crs="EPSG:4326"
 ).to_crs("EPSG:3857")
 
-# =========================================
 # CREAR GRILLA
-# =========================================
 
 print("Creando grilla de 500m...")
 
@@ -117,9 +110,7 @@ grilla_gdf = gpd.GeoDataFrame(grid_cells, columns=["geometry"], crs="EPSG:3857")
 grilla_gdf["id_celda"] = grilla_gdf.index
 grilla_gdf["area_km2"] = grilla_gdf.geometry.area / 1e6
 
-# =========================================
 # SPATIAL JOIN
-# =========================================
 
 print("Ejecutando cruces espaciales...")
 
@@ -147,9 +138,9 @@ grilla_gdf[["delitos_ponderados", "cant_gastronomia"]] = (
     grilla_gdf[["delitos_ponderados", "cant_gastronomia"]].fillna(0)
 )
 
-# =========================================
+
 # DENSIDADES
-# =========================================
+
 
 grilla_gdf["densidad_delitos"] = grilla_gdf["delitos_ponderados"] / grilla_gdf["area_km2"]
 grilla_gdf["densidad_gastronomia"] = grilla_gdf["cant_gastronomia"] / grilla_gdf["area_km2"]
@@ -159,16 +150,12 @@ grilla_activa = grilla_gdf[
     (grilla_gdf["cant_gastronomia"] > 0)
 ].copy()
 
-# =========================================
 # EXPORTAR MATRIZ
-# =========================================
 
 grilla_activa.drop(columns=["geometry"]).to_csv(OUTPUT_MATRIZ, index=False)
 print(f"💾 Matriz guardada en: {OUTPUT_MATRIZ}")
 
-# =========================================
 # ANÁLISIS ESTADÍSTICO
-# =========================================
 
 print("Calculando correlación...")
 
@@ -179,9 +166,7 @@ corr, p_value = stats.spearmanr(
 
 print(f"📊 Spearman: {corr:.3f} | p-value: {p_value:.3e}")
 
-# =========================================
 # GRÁFICO PUBLICABLE
-# =========================================
 
 plt.figure(figsize=(10, 6))
 

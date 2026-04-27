@@ -1,9 +1,7 @@
 from pathlib import Path
 import pandas as pd
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 DATA_RAW = BASE_DIR / "data" / "raw"
@@ -16,9 +14,7 @@ AIRBNB_FILE = DATA_RAW / "listings.csv"
 
 OUTPUT_FILE = DATA_PROCESSED / "alojamientos_unificados.csv"
 
-# =========================================
 # LECTURA
-# =========================================
 
 print(f"📂 Leyendo archivo: {ALOJ_FILE}")
 alojamientos = pd.read_csv(
@@ -40,9 +36,7 @@ airbnb = pd.read_csv(
 print("Columnas alojamientos:", alojamientos.columns.tolist())
 print("Columnas Airbnb:", airbnb.columns.tolist())
 
-# =========================================
 # NORMALIZAR ALOJAMIENTOS GCBA
-# =========================================
 
 alojamientos = alojamientos.rename(columns={
     "lat": "lat",
@@ -56,9 +50,7 @@ alojamientos = alojamientos.rename(columns={
 alojamientos_limpio = alojamientos[["id", "lat", "long"]].copy()
 alojamientos_limpio["fuente"] = "alojamientos_turisticos"
 
-# =========================================
 # NORMALIZAR AIRBNB
-# =========================================
 
 airbnb = airbnb.rename(columns={
     "latitude": "lat",
@@ -70,18 +62,14 @@ airbnb = airbnb.rename(columns={
 airbnb_limpio = airbnb[["id", "lat", "long"]].copy()
 airbnb_limpio["fuente"] = "airbnb_listings"
 
-# =========================================
 # UNIFICAR
-# =========================================
 
 df_final = pd.concat(
     [alojamientos_limpio, airbnb_limpio],
     ignore_index=True
 )
 
-# =========================================
 # LIMPIEZA DE COORDENADAS
-# =========================================
 
 df_final["lat"] = pd.to_numeric(df_final["lat"], errors="coerce")
 df_final["long"] = pd.to_numeric(df_final["long"], errors="coerce")
@@ -101,9 +89,7 @@ df_final = df_final.drop_duplicates(subset=["lat", "long"]).reset_index(drop=Tru
 # Orden final
 df_final = df_final[["id", "lat", "long", "fuente"]]
 
-# =========================================
 # EXPORTAR
-# =========================================
 
 df_final.to_csv(
     OUTPUT_FILE,

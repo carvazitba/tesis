@@ -3,9 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 DATA_PROCESSED = BASE_DIR / "data" / "processed"
@@ -18,17 +16,13 @@ OUTPUT_IMG = OUTPUT_DIR / "eda_delitos_por_mes.png"
 
 print(f"📂 Cargando archivo desde: {INPUT_FILE}")
 
-# =========================================
 # CARGA
-# =========================================
 
 INPUT_FILE = DATA_PROCESSED / "delitos_total.csv.gz"
 
 df = pd.read_csv(INPUT_FILE, low_memory=False)
 
-# =========================================
 # LIMPIEZA
-# =========================================
 
 df['mes'] = (
     df['mes']
@@ -41,23 +35,17 @@ df['mes'] = (
 orden_meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun',
                'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
 
-# =========================================
 # CONTEO
-# =========================================
 
 conteo_mes = df['mes'].value_counts()
 conteo_mes = conteo_mes.reindex(orden_meses).dropna()
 
-# =========================================
 # COLORES (azul → rojo)
-# =========================================
 
 norm = plt.Normalize(conteo_mes.min(), conteo_mes.max())
 colors = plt.cm.coolwarm(norm(conteo_mes.values))
 
-# =========================================
 # GRÁFICO
-# =========================================
 
 plt.figure(figsize=(14, 6))
 sns.barplot(x=conteo_mes.index, y=conteo_mes.values, palette=colors)

@@ -5,9 +5,7 @@ import geopandas as gpd
 import folium
 import branca.colormap as cm
 
-# =========================================
 # RUTAS REPRODUCIBLES
-# =========================================
 
 BASE_DIR = Path(__file__).resolve().parents[1]  # tesis/
 
@@ -38,9 +36,7 @@ if not DELITOS_PATH.exists():
 if not CAJEROS_PATH.exists():
     raise FileNotFoundError(f"No se encontró: {CAJEROS_PATH}")
 
-# =========================================
 # CARGA DE DATOS
-# =========================================
 
 print("📂 Cargando delitos...")
 delitos = pd.read_csv(DELITOS_PATH, low_memory=False)
@@ -48,9 +44,7 @@ delitos = pd.read_csv(DELITOS_PATH, low_memory=False)
 print("📂 Cargando cajeros...")
 cajeros = pd.read_csv(CAJEROS_PATH, low_memory=False)
 
-# =========================================
 # LIMPIEZA
-# =========================================
 
 delitos.columns = delitos.columns.str.strip().str.lower()
 cajeros.columns = cajeros.columns.str.strip().str.lower()
@@ -63,9 +57,7 @@ cajeros["lat"] = pd.to_numeric(cajeros["lat"], errors="coerce")
 cajeros["long"] = pd.to_numeric(cajeros["long"], errors="coerce")
 cajeros = cajeros.dropna(subset=["lat", "long"]).copy()
 
-# =========================================
 # GEO DATAFRAMES
-# =========================================
 
 delitos_gdf = gpd.GeoDataFrame(
     delitos,
@@ -79,16 +71,12 @@ cajeros_gdf = gpd.GeoDataFrame(
     crs="EPSG:4326"
 )
 
-# =========================================
 # PROYECCIÓN MÉTRICA
-# =========================================
 
 delitos_m = delitos_gdf.to_crs(epsg=3857)
 cajeros_m = cajeros_gdf.to_crs(epsg=3857)
 
-# =========================================
 # CREAR 3 ANILLOS DE 50 METROS
-# =========================================
 
 distancias = [0, 50, 100, 150]
 anillos = []
@@ -118,9 +106,7 @@ for _, row in cajeros_m.iterrows():
 
 anillos_gdf = gpd.GeoDataFrame(anillos, crs="EPSG:3857")
 
-# =========================================
 # SPATIAL JOIN
-# =========================================
 
 print("📍 Calculando delitos...")
 join = gpd.sjoin(delitos_m, anillos_gdf, how="inner", predicate="within")
@@ -134,9 +120,7 @@ conteos = (
 anillos_gdf = anillos_gdf.merge(conteos, on=["id", "anillo"], how="left")
 anillos_gdf["cantidad_delitos"] = anillos_gdf["cantidad_delitos"].fillna(0)
 
-# =========================================
 # DENSIDADES
-# =========================================
 
 anillos_gdf["area_km2"] = anillos_gdf.geometry.area / 1_000_000
 anillos_gdf["densidad"] = anillos_gdf["cantidad_delitos"] / anillos_gdf["area_km2"]
@@ -153,16 +137,12 @@ anillos_gdf["densidad_relativa"] = np.where(
     np.nan
 )
 
-# =========================================
 # EXPORTAR CSV
-# =========================================
 
 anillos_gdf.drop(columns="geometry").to_csv(OUTPUT_CSV, index=False)
 print(f"💾 CSV guardado en: {OUTPUT_CSV}")
 
-# =========================================
 # MAPA
-# =========================================
 
 anillos_wgs = anillos_gdf.to_crs(epsg=4326)
 
@@ -244,9 +224,7 @@ for _, row in cajeros.iterrows():
 mapa.save(OUTPUT_HTML)
 print(f"🗺️ Mapa generado en: {OUTPUT_HTML}")
 
-# =========================================
 # ANÁLISIS TEXTUAL AUTOMÁTICO
-# =========================================
 
 print("🧠 Generando análisis textual...")
 
