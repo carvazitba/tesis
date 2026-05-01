@@ -104,16 +104,22 @@ def corregir_coordenadas(lat, lon):
 
 # 4) ARCHIVOS DE ENTRADA
 
-archivos_delitos = [
-    "delitos_2016.xlsx",
-    "delitos_2017.xlsx",
-    "delitos_2018.xlsx",
-    "delitos_2019.xlsx",
-    "delitos_2021.xlsx",
-    "delitos_2022.xlsx",
-    "delitos_2023.xlsx",
-]
+# Busca automáticamente todos los archivos con formato delitos_(año).xlsx
+# Ejemplo: delitos_2016.xlsx, delitos_2017.xlsx, delitos_2024.xlsx
 
+archivos_delitos = sorted(DATA_RAW.glob("delitos_*.xlsx"))
+
+if not archivos_delitos:
+    raise FileNotFoundError(
+        f"No se encontraron archivos con patrón 'delitos_*.xlsx' en: {DATA_RAW}"
+    )
+
+print("\n===================================================")
+print("ARCHIVOS DE DELITOS DETECTADOS")
+print("===================================================")
+
+for archivo in archivos_delitos:
+    print(f" - {archivo.name}")
 
 # 5) CONTADORES GLOBALES
 
@@ -128,24 +134,21 @@ total_global_invalid_rango = 0
 
 # 6) LOOP DE CARGA + LIMPIEZA
 
-for archivo in archivos_delitos:
-
-    archivo_path = DATA_RAW / archivo
+for archivo_path in archivos_delitos:
 
     print("\n===================================================")
-    print(f"CARGANDO ARCHIVO: {archivo}")
+    print(f"CARGANDO ARCHIVO: {archivo_path.name}")
     print("===================================================")
-
-    if not archivo_path.exists():
-        raise FileNotFoundError(f"No se encontró el archivo: {archivo_path}")
 
     df = pd.read_excel(archivo_path)
 
+    # Normalizar nombres de columnas
     df.columns = df.columns.str.strip().str.lower()
 
+    # Validación mínima de columnas requeridas
     if "latitud" not in df.columns or "longitud" not in df.columns:
         raise ValueError(
-            f"El archivo {archivo} no contiene columnas 'latitud' y 'longitud'. "
+            f"El archivo {archivo_path.name} no contiene columnas 'latitud' y 'longitud'. "
             f"Columnas encontradas: {list(df.columns)}"
         )
 
