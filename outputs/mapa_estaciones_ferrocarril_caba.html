@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02e1358363adbecc4339c200af05eafd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_02e1358363adbecc4339c200af05eafd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_02e1358363adbecc4339c200af05eafd = L.map(
+                "map_02e1358363adbecc4339c200af05eafd",
+                {
+                    center: [-34.614357383499126, -58.446550993051126],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32ac46e0f5688acce762bf32ccb50319 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_32ac46e0f5688acce762bf32ccb50319.addTo(map_02e1358363adbecc4339c200af05eafd);
+        
+    
+            var feature_group_3e349afb41bca4f5dab9f738bc464960 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_cfeb94e51237a30b80b32ba9c4e38298 = L.circleMarker(
+                [-34.5717485, -58.4249824],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_08c2d5e392bb8da4d3e8a63520a38ec7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_596298439aac74b4ab9a4971aa5d832e = $(`<div id="html_596298439aac74b4ab9a4971aa5d832e" style="width: 100.0%; height: 100.0%;">Nombre: 3 de Febrero<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Palermo<br>Comuna: Comuna 14</div>`)[0];
+                popup_08c2d5e392bb8da4d3e8a63520a38ec7.setContent(html_596298439aac74b4ab9a4971aa5d832e);
+            
+        
+
+        circle_marker_cfeb94e51237a30b80b32ba9c4e38298.bindPopup(popup_08c2d5e392bb8da4d3e8a63520a38ec7)
+        ;
+
+        
+    
+    
+            circle_marker_cfeb94e51237a30b80b32ba9c4e38298.bindTooltip(
+                `<div>
+                     Nombre: 3 de Febrero<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Palermo<br>Comuna: Comuna 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c5a60f4dd944ad6bc0b4e2e8c02f5c2 = L.circleMarker(
+                [-34.5680506, -58.4618081],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_bed4ff491d365be34aef801bf00897b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2c06d39c5bb2d0116aad1cf31497e7b = $(`<div id="html_c2c06d39c5bb2d0116aad1cf31497e7b" style="width: 100.0%; height: 100.0%;">Nombre: Belgrano R<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Belgrano<br>Comuna: Comuna 13</div>`)[0];
+                popup_bed4ff491d365be34aef801bf00897b5.setContent(html_c2c06d39c5bb2d0116aad1cf31497e7b);
+            
+        
+
+        circle_marker_0c5a60f4dd944ad6bc0b4e2e8c02f5c2.bindPopup(popup_bed4ff491d365be34aef801bf00897b5)
+        ;
+
+        
+    
+    
+            circle_marker_0c5a60f4dd944ad6bc0b4e2e8c02f5c2.bindTooltip(
+                `<div>
+                     Nombre: Belgrano R<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Belgrano<br>Comuna: Comuna 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da94b7b3b0250c044e54a5c8f2d48dae = L.circleMarker(
+                [-34.5652607, -58.4753485],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_d9b13dad2e5fc648643d2cb2ae1dd1be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3013b7638da0d95e19c86c441428e63f = $(`<div id="html_3013b7638da0d95e19c86c441428e63f" style="width: 100.0%; height: 100.0%;">Nombre: Coghlan<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Coghlan<br>Comuna: Comuna 12</div>`)[0];
+                popup_d9b13dad2e5fc648643d2cb2ae1dd1be.setContent(html_3013b7638da0d95e19c86c441428e63f);
+            
+        
+
+        circle_marker_da94b7b3b0250c044e54a5c8f2d48dae.bindPopup(popup_d9b13dad2e5fc648643d2cb2ae1dd1be)
+        ;
+
+        
+    
+    
+            circle_marker_da94b7b3b0250c044e54a5c8f2d48dae.bindTooltip(
+                `<div>
+                     Nombre: Coghlan<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Coghlan<br>Comuna: Comuna 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a20415b7035d1f41c8e197257ccaf501 = L.circleMarker(
+                [-34.5729746, -58.448253],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_0e9b8fdf4a65525d40edd0c6bda86cc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d99be257746e6e36b4929812a3ca9e5c = $(`<div id="html_d99be257746e6e36b4929812a3ca9e5c" style="width: 100.0%; height: 100.0%;">Nombre: Colegiales<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Colegiales<br>Comuna: Comuna 13</div>`)[0];
+                popup_0e9b8fdf4a65525d40edd0c6bda86cc0.setContent(html_d99be257746e6e36b4929812a3ca9e5c);
+            
+        
+
+        circle_marker_a20415b7035d1f41c8e197257ccaf501.bindPopup(popup_0e9b8fdf4a65525d40edd0c6bda86cc0)
+        ;
+
+        
+    
+    
+            circle_marker_a20415b7035d1f41c8e197257ccaf501.bindTooltip(
+                `<div>
+                     Nombre: Colegiales<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Colegiales<br>Comuna: Comuna 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72534ca5045c8e5106a1cdd7730f078e = L.circleMarker(
+                [-34.575705, -58.435404],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_b6687e01789d72fa47a3c4b24bf68b58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd9337e65266fd82f5367f4e6b023652 = $(`<div id="html_fd9337e65266fd82f5367f4e6b023652" style="width: 100.0%; height: 100.0%;">Nombre: Ministro Carranza<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Palermo<br>Comuna: Comuna 14</div>`)[0];
+                popup_b6687e01789d72fa47a3c4b24bf68b58.setContent(html_fd9337e65266fd82f5367f4e6b023652);
+            
+        
+
+        circle_marker_72534ca5045c8e5106a1cdd7730f078e.bindPopup(popup_b6687e01789d72fa47a3c4b24bf68b58)
+        ;
+
+        
+    
+    
+            circle_marker_72534ca5045c8e5106a1cdd7730f078e.bindTooltip(
+                `<div>
+                     Nombre: Ministro Carranza<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Palermo<br>Comuna: Comuna 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76867519bcb670b43a56a9bfc671d6cf = L.circleMarker(
+                [-34.5540735, -58.4870632],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_66632372f9c82276eea2cf2aa15eec46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d93073b4e22bbcbcd8c34134257f6a5 = $(`<div id="html_2d93073b4e22bbcbcd8c34134257f6a5" style="width: 100.0%; height: 100.0%;">Nombre: Saavedra<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Saavedra<br>Comuna: Comuna 12</div>`)[0];
+                popup_66632372f9c82276eea2cf2aa15eec46.setContent(html_2d93073b4e22bbcbcd8c34134257f6a5);
+            
+        
+
+        circle_marker_76867519bcb670b43a56a9bfc671d6cf.bindPopup(popup_66632372f9c82276eea2cf2aa15eec46)
+        ;
+
+        
+    
+    
+            circle_marker_76867519bcb670b43a56a9bfc671d6cf.bindTooltip(
+                `<div>
+                     Nombre: Saavedra<br>Línea: Mitre<br>Ramal:  Retiro - Mitre<br>Barrio: Saavedra<br>Comuna: Comuna 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f29800517db7c984aedc83cb56dcba61 = L.circleMarker(
+                [-34.5588016, -58.4489445],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_9fae5c2c889e7a2504f59fd81b113184 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5527a966ff77b45ecb52b3c124251af7 = $(`<div id="html_5527a966ff77b45ecb52b3c124251af7" style="width: 100.0%; height: 100.0%;">Nombre: Belgrano C<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Belgrano<br>Comuna: Comuna 13</div>`)[0];
+                popup_9fae5c2c889e7a2504f59fd81b113184.setContent(html_5527a966ff77b45ecb52b3c124251af7);
+            
+        
+
+        circle_marker_f29800517db7c984aedc83cb56dcba61.bindPopup(popup_9fae5c2c889e7a2504f59fd81b113184)
+        ;
+
+        
+    
+    
+            circle_marker_f29800517db7c984aedc83cb56dcba61.bindTooltip(
+                `<div>
+                     Nombre: Belgrano C<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Belgrano<br>Comuna: Comuna 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c8a06b2cae6271de606e17982ad58f4 = L.circleMarker(
+                [-34.5482911, -58.4628516],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_ccd8024917be0837bfdbe2adad51c489 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abc7357b0ae299f7a4e418eaf55b3b0d = $(`<div id="html_abc7357b0ae299f7a4e418eaf55b3b0d" style="width: 100.0%; height: 100.0%;">Nombre: Núñez<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Nu\u00f1ez<br>Comuna: Comuna 13</div>`)[0];
+                popup_ccd8024917be0837bfdbe2adad51c489.setContent(html_abc7357b0ae299f7a4e418eaf55b3b0d);
+            
+        
+
+        circle_marker_1c8a06b2cae6271de606e17982ad58f4.bindPopup(popup_ccd8024917be0837bfdbe2adad51c489)
+        ;
+
+        
+    
+    
+            circle_marker_1c8a06b2cae6271de606e17982ad58f4.bindTooltip(
+                `<div>
+                     Nombre: Núñez<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Nu\u00f1ez<br>Comuna: Comuna 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa13c2ebbe420014819cf67a3d316d1d = L.circleMarker(
+                [-34.5899757, -58.376129],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_010780b3fa5d3f4d5e437970933063c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_876eb001bf9a2bfa8a22a895d0e641d6 = $(`<div id="html_876eb001bf9a2bfa8a22a895d0e641d6" style="width: 100.0%; height: 100.0%;">Nombre: Retiro LM<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Retiro<br>Comuna: Comuna 1</div>`)[0];
+                popup_010780b3fa5d3f4d5e437970933063c9.setContent(html_876eb001bf9a2bfa8a22a895d0e641d6);
+            
+        
+
+        circle_marker_aa13c2ebbe420014819cf67a3d316d1d.bindPopup(popup_010780b3fa5d3f4d5e437970933063c9)
+        ;
+
+        
+    
+    
+            circle_marker_aa13c2ebbe420014819cf67a3d316d1d.bindTooltip(
+                `<div>
+                     Nombre: Retiro LM<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Retiro<br>Comuna: Comuna 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65103eb7c6868b18eb5add08ebac9f7b = L.circleMarker(
+                [-34.5365204, -58.4680326],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_beb1272baeec4fd3ada62453589812e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e73b764df8f4e8b4b38146b09f30fe80 = $(`<div id="html_e73b764df8f4e8b4b38146b09f30fe80" style="width: 100.0%; height: 100.0%;">Nombre: Rivadavia<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Nu\u00f1ez<br>Comuna: Comuna 13</div>`)[0];
+                popup_beb1272baeec4fd3ada62453589812e0.setContent(html_e73b764df8f4e8b4b38146b09f30fe80);
+            
+        
+
+        circle_marker_65103eb7c6868b18eb5add08ebac9f7b.bindPopup(popup_beb1272baeec4fd3ada62453589812e0)
+        ;
+
+        
+    
+    
+            circle_marker_65103eb7c6868b18eb5add08ebac9f7b.bindTooltip(
+                `<div>
+                     Nombre: Rivadavia<br>Línea: Mitre<br>Ramal:  Retiro - Tigre<br>Barrio: Nu\u00f1ez<br>Comuna: Comuna 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29c382fe214473de705c9e304a88f7a9 = L.circleMarker(
+                [-34.6481153, -58.4199555],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_6230c744c5329150f2ec1c349d52dfff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35526a26596de4d5e5c7f1c19e2c1176 = $(`<div id="html_35526a26596de4d5e5c7f1c19e2c1176" style="width: 100.0%; height: 100.0%;">Nombre: Dr. Sáenz<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Nueva Pompeya<br>Comuna: Comuna 4</div>`)[0];
+                popup_6230c744c5329150f2ec1c349d52dfff.setContent(html_35526a26596de4d5e5c7f1c19e2c1176);
+            
+        
+
+        circle_marker_29c382fe214473de705c9e304a88f7a9.bindPopup(popup_6230c744c5329150f2ec1c349d52dfff)
+        ;
+
+        
+    
+    
+            circle_marker_29c382fe214473de705c9e304a88f7a9.bindTooltip(
+                `<div>
+                     Nombre: Dr. Sáenz<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Nueva Pompeya<br>Comuna: Comuna 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4eca501afc9ec3406c3b122ef48efcd = L.circleMarker(
+                [-34.6661376, -58.4502223],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_cc518786f7d59f396ba7d6fb1abae50f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f6c4e7e31f39db539babf7c1d98f54c = $(`<div id="html_5f6c4e7e31f39db539babf7c1d98f54c" style="width: 100.0%; height: 100.0%;">Nombre: Presidente Illia<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Villa Soldati<br>Comuna: Comuna 8</div>`)[0];
+                popup_cc518786f7d59f396ba7d6fb1abae50f.setContent(html_5f6c4e7e31f39db539babf7c1d98f54c);
+            
+        
+
+        circle_marker_e4eca501afc9ec3406c3b122ef48efcd.bindPopup(popup_cc518786f7d59f396ba7d6fb1abae50f)
+        ;
+
+        
+    
+    
+            circle_marker_e4eca501afc9ec3406c3b122ef48efcd.bindTooltip(
+                `<div>
+                     Nombre: Presidente Illia<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Villa Soldati<br>Comuna: Comuna 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_407efd8949918e5bfaba0365e3ad7e3b = L.circleMarker(
+                [-34.67713, -58.4769699],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_3505b9d856c592a0405e11f9c1251f6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8025b4b02e77948327b0e5e9b0c6297d = $(`<div id="html_8025b4b02e77948327b0e5e9b0c6297d" style="width: 100.0%; height: 100.0%;">Nombre: Villa Lugano<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Villa Lugano<br>Comuna: Comuna 8</div>`)[0];
+                popup_3505b9d856c592a0405e11f9c1251f6b.setContent(html_8025b4b02e77948327b0e5e9b0c6297d);
+            
+        
+
+        circle_marker_407efd8949918e5bfaba0365e3ad7e3b.bindPopup(popup_3505b9d856c592a0405e11f9c1251f6b)
+        ;
+
+        
+    
+    
+            circle_marker_407efd8949918e5bfaba0365e3ad7e3b.bindTooltip(
+                `<div>
+                     Nombre: Villa Lugano<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Villa Lugano<br>Comuna: Comuna 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_557ac9892304802cc8557794dd7f1c9c = L.circleMarker(
+                [-34.6622014, -58.4408973],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_345f3857a3cec7b2ab1f2323414d65c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4b307e7242be930fc07824023ac2f6e = $(`<div id="html_f4b307e7242be930fc07824023ac2f6e" style="width: 100.0%; height: 100.0%;">Nombre: Villa Soldati<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Villa Soldati<br>Comuna: Comuna 8</div>`)[0];
+                popup_345f3857a3cec7b2ab1f2323414d65c3.setContent(html_f4b307e7242be930fc07824023ac2f6e);
+            
+        
+
+        circle_marker_557ac9892304802cc8557794dd7f1c9c.bindPopup(popup_345f3857a3cec7b2ab1f2323414d65c3)
+        ;
+
+        
+    
+    
+            circle_marker_557ac9892304802cc8557794dd7f1c9c.bindTooltip(
+                `<div>
+                     Nombre: Villa Soldati<br>Línea: Belgrano Sur<br>Ramal:  Buenos Aires - M.C.G. Belgrano<br>Barrio: Villa Soldati<br>Comuna: Comuna 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cce834b0245fde4a8148484533f2cce = L.circleMarker(
+                [-34.6536422, -58.3788878],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_7910f87c1b0f24e36134ab1b73547041 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16cf661423ae435f85dc717152fe52be = $(`<div id="html_16cf661423ae435f85dc717152fe52be" style="width: 100.0%; height: 100.0%;">Nombre: Hipólito Yrigoyen<br>Línea: Roca<br>Ramal:  Plaza Constitución - Bosques-T<br>Barrio: Barracas<br>Comuna: Comuna 4</div>`)[0];
+                popup_7910f87c1b0f24e36134ab1b73547041.setContent(html_16cf661423ae435f85dc717152fe52be);
+            
+        
+
+        circle_marker_7cce834b0245fde4a8148484533f2cce.bindPopup(popup_7910f87c1b0f24e36134ab1b73547041)
+        ;
+
+        
+    
+    
+            circle_marker_7cce834b0245fde4a8148484533f2cce.bindTooltip(
+                `<div>
+                     Nombre: Hipólito Yrigoyen<br>Línea: Roca<br>Ramal:  Plaza Constitución - Bosques-T<br>Barrio: Barracas<br>Comuna: Comuna 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d675fd901d6029b91eba9ed58854b648 = L.circleMarker(
+                [-34.6026515, -58.5124313],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_b1e80b97d1608759444c5021543e43cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_032df38f9626d57f7237cbcb79b1b0b5 = $(`<div id="html_032df38f9626d57f7237cbcb79b1b0b5" style="width: 100.0%; height: 100.0%;">Nombre: Devoto<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Villa Devoto<br>Comuna: Comuna 11</div>`)[0];
+                popup_b1e80b97d1608759444c5021543e43cb.setContent(html_032df38f9626d57f7237cbcb79b1b0b5);
+            
+        
+
+        circle_marker_d675fd901d6029b91eba9ed58854b648.bindPopup(popup_b1e80b97d1608759444c5021543e43cb)
+        ;
+
+        
+    
+    
+            circle_marker_d675fd901d6029b91eba9ed58854b648.bindTooltip(
+                `<div>
+                     Nombre: Devoto<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Villa Devoto<br>Comuna: Comuna 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2232a6d60e11e0e8212002590f2b00fd = L.circleMarker(
+                [-34.6013699, -58.4935315],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_60a272777734a02766ad184e33a4356a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e2386896257824eff90e78a3a45d228 = $(`<div id="html_6e2386896257824eff90e78a3a45d228" style="width: 100.0%; height: 100.0%;">Nombre: Villa del Parque<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Villa Del Parque<br>Comuna: Comuna 11</div>`)[0];
+                popup_60a272777734a02766ad184e33a4356a.setContent(html_6e2386896257824eff90e78a3a45d228);
+            
+        
+
+        circle_marker_2232a6d60e11e0e8212002590f2b00fd.bindPopup(popup_60a272777734a02766ad184e33a4356a)
+        ;
+
+        
+    
+    
+            circle_marker_2232a6d60e11e0e8212002590f2b00fd.bindTooltip(
+                `<div>
+                     Nombre: Villa del Parque<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Villa Del Parque<br>Comuna: Comuna 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dffe478a224cdd0d5c4e822db8108240 = L.circleMarker(
+                [-34.5796614, -58.4274154],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_c36e435490c289a91d61c6015448d553 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fd9ca0906d7d8fa91ebc9af15e72453 = $(`<div id="html_8fd9ca0906d7d8fa91ebc9af15e72453" style="width: 100.0%; height: 100.0%;">Nombre: Palermo<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Palermo<br>Comuna: Comuna 14</div>`)[0];
+                popup_c36e435490c289a91d61c6015448d553.setContent(html_8fd9ca0906d7d8fa91ebc9af15e72453);
+            
+        
+
+        circle_marker_dffe478a224cdd0d5c4e822db8108240.bindPopup(popup_c36e435490c289a91d61c6015448d553)
+        ;
+
+        
+    
+    
+            circle_marker_dffe478a224cdd0d5c4e822db8108240.bindTooltip(
+                `<div>
+                     Nombre: Palermo<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Palermo<br>Comuna: Comuna 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4a37cce5b52695bfb8adce334b4cc5b = L.circleMarker(
+                [-34.5881302, -58.3756885],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_336faa37c27f684131e3d3fd64759956 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c75ea52f9fcb107d98d8617c950ecf5a = $(`<div id="html_c75ea52f9fcb107d98d8617c950ecf5a" style="width: 100.0%; height: 100.0%;">Nombre: Retiro LSM<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Retiro<br>Comuna: Comuna 1</div>`)[0];
+                popup_336faa37c27f684131e3d3fd64759956.setContent(html_c75ea52f9fcb107d98d8617c950ecf5a);
+            
+        
+
+        circle_marker_e4a37cce5b52695bfb8adce334b4cc5b.bindPopup(popup_336faa37c27f684131e3d3fd64759956)
+        ;
+
+        
+    
+    
+            circle_marker_e4a37cce5b52695bfb8adce334b4cc5b.bindTooltip(
+                `<div>
+                     Nombre: Retiro LSM<br>Línea: San Martin<br>Ramal:  Retiro (LSM) - Cabred<br>Barrio: Retiro<br>Comuna: Comuna 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d19145ff294eb776ecbb556272d414c = L.circleMarker(
+                [-34.6301709, -58.3805834],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_d0d116cc63b2e177c1661a8e35762caf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10f43b95df5e471e18c35cfea333e0c5 = $(`<div id="html_10f43b95df5e471e18c35cfea333e0c5" style="width: 100.0%; height: 100.0%;">Nombre: Constitución<br>Línea: Roca<br>Ramal:  Plaza Constitución - La Plata<br>Barrio: Constitucion<br>Comuna: Comuna 1</div>`)[0];
+                popup_d0d116cc63b2e177c1661a8e35762caf.setContent(html_10f43b95df5e471e18c35cfea333e0c5);
+            
+        
+
+        circle_marker_3d19145ff294eb776ecbb556272d414c.bindPopup(popup_d0d116cc63b2e177c1661a8e35762caf)
+        ;
+
+        
+    
+    
+            circle_marker_3d19145ff294eb776ecbb556272d414c.bindTooltip(
+                `<div>
+                     Nombre: Constitución<br>Línea: Roca<br>Ramal:  Plaza Constitución - La Plata<br>Barrio: Constitucion<br>Comuna: Comuna 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ec591de595485f6a36e3942b2c0db6d = L.circleMarker(
+                [-34.6192442, -58.4436522],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_3ca26fe65a09b32efaa845d346f4b73a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdab8b73cebbc36855af431edac0fb29 = $(`<div id="html_bdab8b73cebbc36855af431edac0fb29" style="width: 100.0%; height: 100.0%;">Nombre: Caballito<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Caballito<br>Comuna: Comuna 6</div>`)[0];
+                popup_3ca26fe65a09b32efaa845d346f4b73a.setContent(html_bdab8b73cebbc36855af431edac0fb29);
+            
+        
+
+        circle_marker_8ec591de595485f6a36e3942b2c0db6d.bindPopup(popup_3ca26fe65a09b32efaa845d346f4b73a)
+        ;
+
+        
+    
+    
+            circle_marker_8ec591de595485f6a36e3942b2c0db6d.bindTooltip(
+                `<div>
+                     Nombre: Caballito<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Caballito<br>Comuna: Comuna 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec2e53e0abdfee5cf1f802be9e179431 = L.circleMarker(
+                [-34.6278504, -58.4661766],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_08c1d1695fcdc9a7c9607194b15d5ee9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0bf22134b59b85a3150d13d7f70476b = $(`<div id="html_a0bf22134b59b85a3150d13d7f70476b" style="width: 100.0%; height: 100.0%;">Nombre: Flores<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Flores<br>Comuna: Comuna 7</div>`)[0];
+                popup_08c1d1695fcdc9a7c9607194b15d5ee9.setContent(html_a0bf22134b59b85a3150d13d7f70476b);
+            
+        
+
+        circle_marker_ec2e53e0abdfee5cf1f802be9e179431.bindPopup(popup_08c1d1695fcdc9a7c9607194b15d5ee9)
+        ;
+
+        
+    
+    
+            circle_marker_ec2e53e0abdfee5cf1f802be9e179431.bindTooltip(
+                `<div>
+                     Nombre: Flores<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Flores<br>Comuna: Comuna 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_200630ec133d1abb26b43ceb59761045 = L.circleMarker(
+                [-34.6323755, -58.4808913],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_96fb28a0f5e774b676036b46591e9c8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84a0050ad396517baa28e2420206e36f = $(`<div id="html_84a0050ad396517baa28e2420206e36f" style="width: 100.0%; height: 100.0%;">Nombre: Floresta<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Floresta<br>Comuna: Comuna 10</div>`)[0];
+                popup_96fb28a0f5e774b676036b46591e9c8f.setContent(html_84a0050ad396517baa28e2420206e36f);
+            
+        
+
+        circle_marker_200630ec133d1abb26b43ceb59761045.bindPopup(popup_96fb28a0f5e774b676036b46591e9c8f)
+        ;
+
+        
+    
+    
+            circle_marker_200630ec133d1abb26b43ceb59761045.bindTooltip(
+                `<div>
+                     Nombre: Floresta<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Floresta<br>Comuna: Comuna 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6ec8db0f4c9b488eef3700faec61e0d = L.circleMarker(
+                [-34.6388728, -58.5263409],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_f8252c91f81f68fcd6829ee30c697cfc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04ab7db65f555cbc5193ff7be1cef7fe = $(`<div id="html_04ab7db65f555cbc5193ff7be1cef7fe" style="width: 100.0%; height: 100.0%;">Nombre: Liniers<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Liniers<br>Comuna: Comuna 9</div>`)[0];
+                popup_f8252c91f81f68fcd6829ee30c697cfc.setContent(html_04ab7db65f555cbc5193ff7be1cef7fe);
+            
+        
+
+        circle_marker_d6ec8db0f4c9b488eef3700faec61e0d.bindPopup(popup_f8252c91f81f68fcd6829ee30c697cfc)
+        ;
+
+        
+    
+    
+            circle_marker_d6ec8db0f4c9b488eef3700faec61e0d.bindTooltip(
+                `<div>
+                     Nombre: Liniers<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Liniers<br>Comuna: Comuna 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fd1c2496be1061c54bd893a654cd8ae = L.circleMarker(
+                [-34.6086496, -58.4088675],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_d20f9b611fc231032706117fb1b3c35e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ad209119bd62d932aea0aed92496111 = $(`<div id="html_7ad209119bd62d932aea0aed92496111" style="width: 100.0%; height: 100.0%;">Nombre: Once<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Balvanera<br>Comuna: Comuna 3</div>`)[0];
+                popup_d20f9b611fc231032706117fb1b3c35e.setContent(html_7ad209119bd62d932aea0aed92496111);
+            
+        
+
+        circle_marker_0fd1c2496be1061c54bd893a654cd8ae.bindPopup(popup_d20f9b611fc231032706117fb1b3c35e)
+        ;
+
+        
+    
+    
+            circle_marker_0fd1c2496be1061c54bd893a654cd8ae.bindTooltip(
+                `<div>
+                     Nombre: Once<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Balvanera<br>Comuna: Comuna 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_092ed093fde2ad6c000e2fc714bb1713 = L.circleMarker(
+                [-34.6362494, -58.5021311],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_1e17a5cb320fc00da808d3495d3f9902 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9ef4ea3920bc59ce4bafe2e85b4e4e8 = $(`<div id="html_e9ef4ea3920bc59ce4bafe2e85b4e4e8" style="width: 100.0%; height: 100.0%;">Nombre: Villa Luro<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Villa Luro<br>Comuna: Comuna 10</div>`)[0];
+                popup_1e17a5cb320fc00da808d3495d3f9902.setContent(html_e9ef4ea3920bc59ce4bafe2e85b4e4e8);
+            
+        
+
+        circle_marker_092ed093fde2ad6c000e2fc714bb1713.bindPopup(popup_1e17a5cb320fc00da808d3495d3f9902)
+        ;
+
+        
+    
+    
+            circle_marker_092ed093fde2ad6c000e2fc714bb1713.bindTooltip(
+                `<div>
+                     Nombre: Villa Luro<br>Línea: Sarmiento<br>Ramal:  Once - Moreno<br>Barrio: Villa Luro<br>Comuna: Comuna 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b331dad44bf17b166df0aa6138e4afb = L.circleMarker(
+                [-34.574712, -58.4878391],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_ff152d7e32cc15b86bc4cf61344607f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b1077caa6d72f296ec5c6b06efa468d = $(`<div id="html_4b1077caa6d72f296ec5c6b06efa468d" style="width: 100.0%; height: 100.0%;">Nombre: General Urquiza<br>Línea: Mitre<br>Ramal:  Retiro - J. L. Suárez<br>Barrio: Villa Urquiza<br>Comuna: Comuna 12</div>`)[0];
+                popup_ff152d7e32cc15b86bc4cf61344607f4.setContent(html_4b1077caa6d72f296ec5c6b06efa468d);
+            
+        
+
+        circle_marker_0b331dad44bf17b166df0aa6138e4afb.bindPopup(popup_ff152d7e32cc15b86bc4cf61344607f4)
+        ;
+
+        
+    
+    
+            circle_marker_0b331dad44bf17b166df0aa6138e4afb.bindTooltip(
+                `<div>
+                     Nombre: General Urquiza<br>Línea: Mitre<br>Ramal:  Retiro - J. L. Suárez<br>Barrio: Villa Urquiza<br>Comuna: Comuna 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a27bd3620033a2076ac811bac84cea99 = L.circleMarker(
+                [-34.5684173, -58.4789912],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_0c67e3ea8ff74cd333b47edcefd34789 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c22cbd6b1ce7786fae8f5cbf65d634b5 = $(`<div id="html_c22cbd6b1ce7786fae8f5cbf65d634b5" style="width: 100.0%; height: 100.0%;">Nombre: L. M. Drago<br>Línea: Mitre<br>Ramal:  Retiro - J. L. Suárez<br>Barrio: Villa Urquiza<br>Comuna: Comuna 12</div>`)[0];
+                popup_0c67e3ea8ff74cd333b47edcefd34789.setContent(html_c22cbd6b1ce7786fae8f5cbf65d634b5);
+            
+        
+
+        circle_marker_a27bd3620033a2076ac811bac84cea99.bindPopup(popup_0c67e3ea8ff74cd333b47edcefd34789)
+        ;
+
+        
+    
+    
+            circle_marker_a27bd3620033a2076ac811bac84cea99.bindTooltip(
+                `<div>
+                     Nombre: L. M. Drago<br>Línea: Mitre<br>Ramal:  Retiro - J. L. Suárez<br>Barrio: Villa Urquiza<br>Comuna: Comuna 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e710c29c0892db0bd9be314420c77838 = L.circleMarker(
+                [-34.5804962, -58.501898],
+                {"bubblingMouseEvents": true, "color": "#7f0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d73027", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e349afb41bca4f5dab9f738bc464960);
+        
+    
+        var popup_552de46adb5d2c83b4046c1c6086946b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ab76afb24ea13bca932b33ea3b5d473 = $(`<div id="html_1ab76afb24ea13bca932b33ea3b5d473" style="width: 100.0%; height: 100.0%;">Nombre: Pueyrredón<br>Línea: Mitre<br>Ramal:  Retiro - J. L. Suárez<br>Barrio: Villa Pueyrredon<br>Comuna: Comuna 12</div>`)[0];
+                popup_552de46adb5d2c83b4046c1c6086946b.setContent(html_1ab76afb24ea13bca932b33ea3b5d473);
+            
+        
+
+        circle_marker_e710c29c0892db0bd9be314420c77838.bindPopup(popup_552de46adb5d2c83b4046c1c6086946b)
+        ;
+
+        
+    
+    
+            circle_marker_e710c29c0892db0bd9be314420c77838.bindTooltip(
+                `<div>
+                     Nombre: Pueyrredón<br>Línea: Mitre<br>Ramal:  Retiro - J. L. Suárez<br>Barrio: Villa Pueyrredon<br>Comuna: Comuna 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_3e349afb41bca4f5dab9f738bc464960.addTo(map_02e1358363adbecc4339c200af05eafd);
+        
+    
+            var layer_control_1d65fb55f891f4ef190bd319d06fb8a0_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_32ac46e0f5688acce762bf32ccb50319,
+                },
+                overlays :  {
+                    "Estaciones de ferrocarril en CABA" : feature_group_3e349afb41bca4f5dab9f738bc464960,
+                },
+            };
+            let layer_control_1d65fb55f891f4ef190bd319d06fb8a0 = L.control.layers(
+                layer_control_1d65fb55f891f4ef190bd319d06fb8a0_layers.base_layers,
+                layer_control_1d65fb55f891f4ef190bd319d06fb8a0_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_02e1358363adbecc4339c200af05eafd);
+
+        
+</script>
+</html>
