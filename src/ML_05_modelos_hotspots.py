@@ -17,9 +17,11 @@ Salidas:
 
 from pathlib import Path
 import warnings
+import pickle
 
 import numpy as np
 import pandas as pd
+import joblib
 
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
@@ -50,6 +52,7 @@ INPUT_CSV = OUTPUT_DIR / "dataset_ml_features_temporales.csv"
 OUTPUT_RESULTADOS = OUTPUT_DIR / "resultados_modelos_hotspots.csv"
 OUTPUT_RF_IMPORTANCE = OUTPUT_DIR / "feature_importance_random_forest.csv"
 OUTPUT_XGB_IMPORTANCE = OUTPUT_DIR / "feature_importance_xgboost.csv"
+OUTPUT_FEATURE_NAMES = OUTPUT_DIR / "feature_names_ml05.csv"
 
 TARGET_COL = "hotspot_exploratorio"
 
@@ -90,7 +93,8 @@ def cargar_dataset() -> pd.DataFrame:
     df["fecha_mes"] = pd.to_datetime(df["fecha_mes"], errors="coerce")
     df = df.dropna(subset=["fecha_mes"]).copy()
 
-    df = df.sort_values("fecha_mes").reset_index(drop=True)
+    # Ordenar por temporal + espacial para reproducibilidad
+    df = df.sort_values(["fecha_mes", "grid_id", "franja"]).reset_index(drop=True)
 
     return df
 
@@ -179,7 +183,8 @@ def calcular_metricas(y_true, y_pred, y_proba):
         if len(np.unique(y_true)) > 1 else np.nan,
     }
 
-    tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()
+    # labels=[0, 1] garantiza matriz 2x2 aunque un fold tenga una sola clase
+    tn, fp, fn, tp = confusion_matrix(y_true, y_pred, labels=[0, 1]).ravel()
 
     metricas.update({
         "tn": tn,
@@ -191,9 +196,28 @@ def calcular_metricas(y_true, y_pred, y_proba):
     return metricas
 
 
-def evaluar_modelos(X, y):
+def generar_splits_temporales_por_mes(df: pd.DataFrame, n_splits: int = 5):
+    """
+    Genera splits temporales cortando por meses COMPLETOS (fecha_mes),
+    no por filas. Garantiza que ningún mes quede repartido entre
+    train y test: se entrena con meses anteriores y se evalúa contra
+    meses posteriores completos.
+    """
+    meses = np.array(sorted(df["fecha_mes"].unique()))
+    tscv = TimeSeriesSplit(n_splits=n_splits)
+
+    for train_mes_idx, test_mes_idx in tscv.split(meses):
+        meses_train = meses[train_mes_idx]
+        meses_test = meses[test_mes_idx]
+
+        train_idx = df.index[df["fecha_mes"].isin(meses_train)].to_numpy()
+        test_idx = df.index[df["fecha_mes"].isin(meses_test)].to_numpy()
+
+        yield train_idx, test_idx
+
+
+def evaluar_modelos(X, y, df):
     modelos = obtener_modelos()
-    tscv = TimeSeriesSplit(n_splits=N_SPLITS)
 
     resultados = []
     modelos_entrenados = {}
@@ -205,7 +229,10 @@ def evaluar_modelos(X, y):
 
         fold = 1
 
-        for train_idx, test_idx in tscv.split(X):
+        # ✅ AJUSTE: splits por fecha_mes completo (no por filas).
+        # Cada fold entrena con meses anteriores y evalúa meses
+        # posteriores completos, sin partir ningún mes.
+        for train_idx, test_idx in generar_splits_temporales_por_mes(df, N_SPLITS):
             X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
             y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
 
@@ -216,8 +243,22 @@ def evaluar_modelos(X, y):
                 f"hotspots test={y_test.mean()*100:.2f}%"
             )
 
+            # ✅ AJUSTE: Compensar desbalance en XGBoost igual que en otros modelos
+            if nombre_modelo == "XGBoost":
+                positivos = y_train.sum()
+                negativos = len(y_train) - positivos
+                
+                if positivos > 0:
+                    scale_weight = negativos / positivos
+                    modelo.set_params(scale_pos_weight=scale_weight)
+                    print(f"         scale_pos_weight={scale_weight:.2f}")
+
             modelo.fit(X_train, y_train)
 
+            # NOTA METODOLÓGICA (IMPORTANTE PARA TESIS):
+            # El threshold usado aquí es 0.50 (umbral por defecto).
+            # Esto permite comparación inicial entre modelos.
+            # Para el modelo final, ver ML_06 donde se optimiza threshold.
             y_pred = modelo.predict(X_test)
 
             if hasattr(modelo, "predict_proba"):
@@ -234,6 +275,15 @@ def evaluar_modelos(X, y):
             fold += 1
 
         # Entrenar modelo final con todo el dataset
+        # ✅ AJUSTE: Aplicar scale_pos_weight al modelo final también
+        if nombre_modelo == "XGBoost":
+            positivos = y.sum()
+            negativos = len(y) - positivos
+            
+            if positivos > 0:
+                scale_weight = negativos / positivos
+                modelo.set_params(scale_pos_weight=scale_weight)
+        
         modelo.fit(X, y)
         modelos_entrenados[nombre_modelo] = modelo
 
@@ -262,6 +312,51 @@ def exportar_feature_importance(modelos_entrenados, feature_names):
         exportar_csv_seguro(fi_xgb, OUTPUT_XGB_IMPORTANCE)
 
 
+def guardar_modelos(modelos_entrenados):
+    """
+    Guarda los modelos entrenados en disco.
+    
+    Utiliza:
+    - joblib para RandomForest y XGBoost (formatos binarios compactos)
+    - pickle para Logistic Regression (Pipeline)
+    
+    NOTA: El threshold = 0.50 fue usado solo para evaluar métricas en ML_05.
+    Los modelos aprenden probabilidades; el threshold es una decisión de
+    evaluación posterior. Para threshold optimizado, ver ML_06.
+    
+    Returns:
+        Lista de nombres de archivo guardados.
+    """
+    print("\n💾 Guardando modelos entrenados...")
+    print("   Nota: el threshold = 0.50 fue usado solo para evaluar métricas en ML_05.")
+    
+    guardados = []
+    
+    for nombre_modelo, modelo in modelos_entrenados.items():
+        
+        if "Logistic Regression" in nombre_modelo:
+            ruta = OUTPUT_DIR / "ML_05_logistic_regression.pickle"
+            with open(ruta, "wb") as f:
+                pickle.dump(modelo, f)
+            print(f"   ✓ {nombre_modelo}: {ruta.name}")
+            guardados.append(ruta.name)
+        
+        elif "Random Forest" in nombre_modelo:
+            ruta = OUTPUT_DIR / "ML_05_random_forest.joblib"
+            joblib.dump(modelo, ruta)
+            print(f"   ✓ {nombre_modelo}: {ruta.name}")
+            guardados.append(ruta.name)
+        
+        elif "XGBoost" in nombre_modelo:
+            ruta = OUTPUT_DIR / "ML_05_xgboost.joblib"
+            joblib.dump(modelo, ruta)
+            print(f"   ✓ {nombre_modelo}: {ruta.name}")
+            guardados.append(ruta.name)
+    
+    print("   ✅ Todos los modelos guardados exitosamente")
+    return guardados
+
+
 # ============================================================
 # MAIN
 # ============================================================
@@ -284,8 +379,8 @@ def main():
     print(f"Features usadas: {X.shape[1]:,}")
     print(f"Observaciones:   {X.shape[0]:,}")
 
-    print("\n🤖 Entrenando modelos con TimeSeriesSplit...")
-    resultados_folds, modelos_entrenados = evaluar_modelos(X, y)
+    print("\n🤖 Entrenando modelos con validación temporal por mes completo...")
+    resultados_folds, modelos_entrenados = evaluar_modelos(X, y, df)
 
     print("\n📊 Resultados por fold:")
     print(resultados_folds.to_string(index=False))
@@ -316,13 +411,39 @@ def main():
     print("\n📌 Exportando feature importance...")
     exportar_feature_importance(modelos_entrenados, X.columns.tolist())
 
+    print("\n📌 Guardando feature names (para SHAP)...")
+    pd.DataFrame({"feature": X.columns.tolist()}).to_csv(
+        OUTPUT_FEATURE_NAMES,
+        index=False
+    )
+    print(f"   ✓ {OUTPUT_FEATURE_NAMES.name}")
+
+    print("\n📌 Guardando modelos...")
+    modelos_guardados = guardar_modelos(modelos_entrenados)
+
     print("\n===================================================")
     print("✅ PROCESO COMPLETADO")
     print("===================================================")
-    print(f"Resultados:           outputs/{OUTPUT_RESULTADOS.name}")
-    print(f"Feature Importance RF: outputs/{OUTPUT_RF_IMPORTANCE.name}")
-    print(f"Feature Importance XGB: outputs/{OUTPUT_XGB_IMPORTANCE.name}")
-    print("===================================================")
+    print(f"Resultados:              outputs/{OUTPUT_RESULTADOS.name}")
+    print(f"Feature Importance RF:   outputs/{OUTPUT_RF_IMPORTANCE.name}")
+    print(f"Feature Importance XGB:  outputs/{OUTPUT_XGB_IMPORTANCE.name}")
+    print(f"Feature Names:           outputs/{OUTPUT_FEATURE_NAMES.name}")
+    print(f"\n🤖 Modelos guardados:")
+    for nombre in modelos_guardados:
+        print(f"  - {nombre}")
+    
+    if "XGBoost" not in modelos_entrenados:
+        print(f"\n⚠️  ADVERTENCIA: XGBoost NO fue entrenado (falta instalarlo).")
+        print(f"   Instalá con: python -m pip install xgboost")
+        print(f"   y volvé a correr este script.")
+    
+    print(f"\n📌 NOTA IMPORTANTE (para la tesis):")
+    print(f"  Los resultados de ML_05 usan threshold = 0.50 (comparación inicial).")
+    print(f"  Para threshold optimizado, ver outputs de ML_06.")
+    print(f"\n📌 Próximos pasos:")
+    print(f"  1. Ejecutar shap_analysis.py para generar explicaciones SHAP")
+    print(f"  2. Integrar visualizaciones en sección 5.3 de la tesis")
+    print("===================================================\n")
 
 
 if __name__ == "__main__":
