@@ -1,0 +1,17 @@
+feature,shap_importance_mean_abs,shap_mean
+promedio_historico_grid,1.1270758,-0.88720065
+promedio_6_meses_franja,0.29449666,-0.14382109
+promedio_6_meses_grid,0.27025068,-0.16761197
+promedio_historico_franja,0.22761051,-0.15905157
+delitos_historicos_grid,0.17138754,0.07899608
+promedio_3_meses_grid,0.11538568,-0.070915595
+promedio_3_meses_franja,0.09287165,-0.052640293
+promedio_historico_mes_calendario_franja,0.08983592,-0.05792395
+promedio_historico_trimestre_grid,0.08249898,-0.02620946
+promedio_historico_mes_calendario_grid,0.08133129,-0.016351918
+delitos_historicos_franja,0.058124498,-0.018075485
+delitos_mes_anterior_grid,0.030456992,-0.013332485
+promedio_historico_trimestre_franja,0.030369839,0.009753765
+hotspot_mes_anterior_franja,0.019833392,-0.007060528
+hotspot_mes_anterior_grid,0.012626542,-0.00017032889
+delitos_mes_anterior_franja,0.007823489,0.0034905544

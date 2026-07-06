@@ -1,0 +1,16 @@
+feature,importance
+cant_colectivos,0.19656445
+dist_min_gastronomia_m,0.17132238
+cant_alojamientos,0.14264353
+cant_gastronomia,0.082242206
+porcentaje_en_caba,0.07840816
+area_interseccion_caba_m2,0.064024895
+dist_min_colectivos_m,0.048676476
+dist_min_alojamientos_m,0.044187706
+cant_estaciones_tren,0.043088164
+dist_min_comisarias_m,0.03617314
+dist_min_estaciones_tren_m,0.034013133
+dist_min_cajeros_m,0.0327353
+cant_cajeros,0.021110043
+cant_comisarias,0.004810481
+area_celda_m2,0.0

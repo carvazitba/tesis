@@ -1,0 +1,16 @@
+feature,importance
+dist_min_gastronomia_m,0.14940517595361846
+dist_min_alojamientos_m,0.11949141018390397
+dist_min_cajeros_m,0.11637857535082353
+cant_alojamientos,0.11145828876684141
+cant_colectivos,0.111080402639489
+cant_gastronomia,0.10148034094834042
+dist_min_colectivos_m,0.09043009814265529
+dist_min_comisarias_m,0.07341954798866929
+dist_min_estaciones_tren_m,0.06172579074053243
+cant_cajeros,0.031793810690450446
+area_interseccion_caba_m2,0.01604866714653236
+porcentaje_en_caba,0.014725399464094058
+cant_comisarias,0.0012920596909268987
+cant_estaciones_tren,0.0012704322931223872
+area_celda_m2,0.0

@@ -1,0 +1,17 @@
+feature,importance
+promedio_historico_grid,0.5551598
+promedio_historico_franja,0.101900734
+promedio_6_meses_franja,0.080515444
+promedio_6_meses_grid,0.06886891
+promedio_historico_trimestre_grid,0.06310162
+promedio_historico_mes_calendario_grid,0.019995846
+promedio_3_meses_franja,0.019454865
+promedio_3_meses_grid,0.015778277
+hotspot_mes_anterior_franja,0.014227921
+delitos_historicos_grid,0.011886513
+hotspot_mes_anterior_grid,0.011372959
+promedio_historico_mes_calendario_franja,0.009177783
+delitos_historicos_franja,0.00828999
+promedio_historico_trimestre_franja,0.008033933
+delitos_mes_anterior_grid,0.007056921
+delitos_mes_anterior_franja,0.0051783943

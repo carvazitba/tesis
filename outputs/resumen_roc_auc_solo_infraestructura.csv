@@ -1,0 +1,4 @@
+modelo,roc_auc
+Random Forest,0.8764187060307034
+XGBoost,0.8724208135307878
+Logistic Regression,0.8016818678883786

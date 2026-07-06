@@ -1,0 +1,16 @@
+feature,shap_importance_mean_abs,shap_mean
+dist_min_gastronomia_m,0.44125167,-0.22033879
+cant_colectivos,0.3921536,-0.17004314
+dist_min_colectivos_m,0.35893562,-0.23991688
+cant_alojamientos,0.27468684,-0.09323746
+dist_min_comisarias_m,0.23442256,-0.13860576
+dist_min_alojamientos_m,0.20427328,-0.13200706
+dist_min_cajeros_m,0.20180947,-0.11167208
+area_interseccion_caba_m2,0.19094835,-0.11588041
+dist_min_estaciones_tren_m,0.17591803,-0.12292668
+cant_gastronomia,0.10039752,-0.059829254
+cant_cajeros,0.043136127,-0.019667378
+porcentaje_en_caba,0.035000257,-0.02004032
+cant_comisarias,0.00048125317,-0.00015865592
+cant_estaciones_tren,0.0003174696,-0.0002119667
+area_celda_m2,0.0,0.0
